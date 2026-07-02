@@ -13,3 +13,4 @@ index.html
 style.css
 script.js
 data/
+update deploy
