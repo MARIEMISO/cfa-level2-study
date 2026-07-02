@@ -1,0 +1,713 @@
+{
+  "bookId": "BOOK2",
+  "title": "BOOK2 | Financial Statement Analysis and Corporate Issuers",
+  "sourceFile": "2026 Level II Schweser 2.pdf",
+  "readings": [
+    {
+      "id": "R7",
+      "readingNumber": 7,
+      "title": "Intercorporate Investments",
+      "topic": "Financial Statement Analysis",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Intercorporate investments는 보유 지분과 지배력에 따라 측정·표시가 달라진다.",
+        "Financial assets, associate, joint venture, business combination, SPE/VIE를 구분하는 것이 핵심이다.",
+        "회계처리 차이는 ROA, ROE, leverage, margin 등 재무비율에 직접 영향을 준다."
+      ],
+      "examPoints": [
+        "Significant influence는 보통 equity method로 연결된다.",
+        "Consolidation에서는 자산·부채가 gross-up되고 goodwill/NCI가 중요해진다.",
+        "IFRS와 US GAAP의 분류·손상·회복 차이를 비교한다."
+      ],
+      "formulas": [
+        "Equity income = ownership % × investee net income",
+        "Carrying value = initial cost + share of NI − dividends ± OCI share − impairment",
+        "Goodwill = purchase price − fair value of identifiable net assets acquired"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Equity method",
+          "left": "투자자산 1줄 + 지분법손익 1줄.",
+          "rightTitle": "Consolidation",
+          "right": "피투자회사 자산·부채·수익·비용을 합산."
+        },
+        {
+          "leftTitle": "Dividend under equity method",
+          "left": "수익이 아니라 투자장부가 감소.",
+          "rightTitle": "Dividend under fair value asset",
+          "right": "배당수익으로 인식 가능."
+        }
+      ],
+      "exampleProblem": "예시: Intercorporate Investments 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Intercorporate Investments에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Intercorporate Investments 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "financial statement analysis",
+        "intercorporate",
+        "intercorporate investments",
+        "investments",
+        "r7",
+        "reading 7"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R8",
+      "readingNumber": 8,
+      "title": "Employee Compensation: Post-Employment and Share-Based",
+      "topic": "Financial Statement Analysis",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Employee compensation은 share-based compensation과 post-employment benefits가 중심이다.",
+        "Stock option expense는 부여일 공정가치를 vesting period에 걸쳐 비용화한다.",
+        "DB pension은 plan asset과 obligation 변화가 재무제표에 미치는 영향을 이해해야 한다."
+      ],
+      "examPoints": [
+        "Option 행사 가능성과 희석효과가 valuation model의 shares outstanding에 영향을 준다.",
+        "DB plan의 service cost, interest cost, expected/actual return 구분이 중요하다.",
+        "Pension assumption 변화는 이익과 OCI, leverage에 영향을 준다."
+      ],
+      "formulas": [
+        "Funded status = Fair value of plan assets − Projected benefit obligation",
+        "Pension expense ≈ service cost + net interest cost ± other components",
+        "Diluted EPS considers incremental shares from options"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Defined contribution",
+          "left": "회사가 납입하면 의무가 대부분 종료.",
+          "rightTitle": "Defined benefit",
+          "right": "미래 급여 지급의 현재가치와 운용자산을 계속 평가."
+        },
+        {
+          "leftTitle": "Service cost",
+          "left": "당기 근무 제공으로 발생한 비용.",
+          "rightTitle": "Interest cost",
+          "right": "시간 경과로 PBO가 증가하는 효과."
+        }
+      ],
+      "exampleProblem": "예시: Employee Compensation: Post-Employment and Share-Based 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Employee Compensation: Post-Employment and Share-Based에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Employee Compensation: Post-Employment and Share-Based 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "and",
+        "compensation",
+        "employee",
+        "employee compensation: post-employment and share-based",
+        "financial statement analysis",
+        "post-employment",
+        "r8",
+        "reading 8",
+        "share-based"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R9",
+      "readingNumber": 9,
+      "title": "Multinational Operations",
+      "topic": "Financial Statement Analysis",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Multinational operations는 functional currency 판단 후 current rate 또는 temporal method를 적용한다.",
+        "Current rate method는 translation adjustment가 OCI에 쌓이고, temporal method는 FX gain/loss가 income statement에 반영된다.",
+        "환율 변화는 매출 성장률, margin, ratio 해석을 왜곡할 수 있다."
+      ],
+      "examPoints": [
+        "Functional currency가 local이면 current rate method, parent currency이면 temporal method를 떠올린다.",
+        "Temporal method에서 monetary/nonmonetary 항목의 환산환율을 구분한다.",
+        "Hyperinflationary economy 처리 순서가 IFRS와 US GAAP에서 다를 수 있다."
+      ],
+      "formulas": [
+        "Current rate: assets/liabilities at current rate",
+        "Temporal: monetary items at current rate, nonmonetary at historical rate",
+        "Translation gain/loss depends on net asset or net liability exposure"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Current rate method",
+          "left": "BS 대부분 current rate, translation adjustment in OCI.",
+          "rightTitle": "Temporal method",
+          "right": "monetary는 current, nonmonetary는 historical, gain/loss in income."
+        },
+        {
+          "leftTitle": "Transaction exposure",
+          "left": "개별 외화거래 결제 손익.",
+          "rightTitle": "Translation exposure",
+          "right": "해외자회사 재무제표 환산 효과."
+        }
+      ],
+      "exampleProblem": "예시: Multinational Operations 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Multinational Operations에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Multinational Operations 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "financial statement analysis",
+        "multinational",
+        "multinational operations",
+        "operations",
+        "r9",
+        "reading 9"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R10",
+      "readingNumber": 10,
+      "title": "Analysis of Financial Institutions",
+      "topic": "Financial Statement Analysis",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Financial institutions는 자산·부채 구조, 규제자본, 유동성, 신용위험 분석이 일반 기업과 다르다.",
+        "은행은 CAMELS 체계로 capital, asset quality, management, earnings, liquidity, sensitivity를 본다.",
+        "보험사는 underwriting profitability, reserve adequacy, investment portfolio risk가 중요하다."
+      ],
+      "examPoints": [
+        "NIM, NPL ratio, loan loss provision, CET1 등 은행 지표를 해석한다.",
+        "금리 변화가 자산·부채 duration mismatch에 미치는 영향이 자주 나온다.",
+        "보험사는 combined ratio 100% 기준을 기억한다."
+      ],
+      "formulas": [
+        "NIM = Net interest income / Average earning assets",
+        "NPL ratio = Nonperforming loans / Total loans",
+        "Combined ratio = Loss ratio + Expense ratio"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Bank",
+          "left": "예대마진·자본규제·신용손실이 핵심.",
+          "rightTitle": "Insurance",
+          "right": "보험영업 손익·준비금·투자수익이 핵심."
+        },
+        {
+          "leftTitle": "Liquidity risk",
+          "left": "자금조달·예금유출 대응 능력.",
+          "rightTitle": "Solvency risk",
+          "right": "손실 흡수 자본의 충분성."
+        }
+      ],
+      "exampleProblem": "예시: Analysis of Financial Institutions 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Analysis of Financial Institutions에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Analysis of Financial Institutions 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "analysis",
+        "analysis of financial institutions",
+        "financial",
+        "financial statement analysis",
+        "institutions",
+        "of",
+        "r10",
+        "reading 10"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R11",
+      "readingNumber": 11,
+      "title": "Evaluating Quality of Financial Reports",
+      "topic": "Financial Statement Analysis",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Financial report quality는 보고서가 경제적 실질을 충실히 보여주는지 평가한다.",
+        "Earnings quality는 지속가능하고 현금흐름으로 뒷받침되는 이익인지가 핵심이다.",
+        "Aggressive accounting, one-off items, accruals, cash flow mismatch를 점검한다."
+      ],
+      "examPoints": [
+        "High accruals는 이익의 지속성을 낮출 수 있다.",
+        "CFO가 NI보다 지속적으로 약하면 earnings quality 경고 신호다.",
+        "Balance sheet quality는 asset overstatement와 liability understatement 가능성을 본다."
+      ],
+      "formulas": [
+        "Accruals ratio = (NI − CFO) / Average net operating assets",
+        "CFO to NI = CFO / Net income",
+        "Quality of earnings = Recurring earnings / Reported earnings"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Reporting quality",
+          "left": "회계정보가 의사결정에 유용한가.",
+          "rightTitle": "Earnings quality",
+          "right": "이익이 지속가능하고 현금화되는가."
+        },
+        {
+          "leftTitle": "Aggressive accounting",
+          "left": "이익을 앞당기고 비용을 늦추는 경향.",
+          "rightTitle": "Conservative accounting",
+          "right": "비용을 빨리 인식하고 이익을 늦추는 경향."
+        }
+      ],
+      "exampleProblem": "예시: Evaluating Quality of Financial Reports 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Evaluating Quality of Financial Reports에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Evaluating Quality of Financial Reports 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "evaluating",
+        "evaluating quality of financial reports",
+        "financial",
+        "financial statement analysis",
+        "of",
+        "quality",
+        "r11",
+        "reading 11",
+        "reports"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R12",
+      "readingNumber": 12,
+      "title": "Integration of Financial Statement Analysis Techniques",
+      "topic": "Financial Statement Analysis",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "FSA integration은 valuation, credit, quality assessment 목적에 맞춰 재무제표를 조정·해석하는 종합 문제다.",
+        "Accounting choice와 비경상 항목을 조정해 peer comparison 가능성을 높인다.",
+        "Earnings, cash flow, capital structure, asset base를 함께 봐야 한다."
+      ],
+      "examPoints": [
+        "Normalize earnings와 adjust balance sheet의 방향을 묻는 vignette형 문제가 많다.",
+        "Lease, pension, inventory, depreciation 차이를 조정하면 ratio가 달라진다.",
+        "Market value decomposition은 franchise value와 tangible value 해석에 쓰인다."
+      ],
+      "formulas": [
+        "ROE = Net margin × Asset turnover × Financial leverage",
+        "FCF = CFO − capital expenditures",
+        "Enterprise value = Market value of equity + debt − cash"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Earnings normalization",
+          "left": "일회성 손익 제거로 지속가능 이익 추정.",
+          "rightTitle": "Quality adjustment",
+          "right": "회계정책 차이를 보정해 비교가능성 개선."
+        },
+        {
+          "leftTitle": "Credit analysis",
+          "left": "downside와 현금상환능력 중심.",
+          "rightTitle": "Equity analysis",
+          "right": "성장·수익성·가치평가 중심."
+        }
+      ],
+      "exampleProblem": "예시: Integration of Financial Statement Analysis Techniques 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Integration of Financial Statement Analysis Techniques에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Integration of Financial Statement Analysis Techniques 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "analysis",
+        "financial",
+        "financial statement analysis",
+        "integration",
+        "integration of financial statement analysis techniques",
+        "of",
+        "r12",
+        "reading 12",
+        "statement",
+        "techniques"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R13",
+      "readingNumber": 13,
+      "title": "Analysis of Dividends and Share Repurchases",
+      "topic": "Corporate Issuers",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Payout policy는 dividend와 share repurchase가 주주가치·세금·신호효과에 미치는 영향을 다룬다.",
+        "완전시장에서는 payout 자체가 가치창출이 아니지만 현실에서는 세금, agency, signaling이 중요하다.",
+        "Repurchase는 EPS와 BVPS를 바꾸지만 경제적 가치는 매입가격과 내재가치 관계가 핵심이다."
+      ],
+      "examPoints": [
+        "Share repurchase가 EPS를 높여도 과대평가된 주식을 사면 가치파괴가 가능하다.",
+        "Dividend coverage ratio는 배당 지속가능성 판단에 사용된다.",
+        "Stable dividend와 constant payout ratio를 구분한다."
+      ],
+      "formulas": [
+        "Dividend coverage = Net income / Dividends",
+        "FCF dividend coverage = Free cash flow / Dividends",
+        "Post-repurchase EPS = Net income after financing effect / Shares outstanding after repurchase"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Cash dividend",
+          "left": "현금 직접 지급, ex-dividend price adjustment 발생.",
+          "rightTitle": "Share repurchase",
+          "right": "주식 수 감소, 세금·신호·자본구조 효과 가능."
+        },
+        {
+          "leftTitle": "Stable dividend",
+          "left": "주당 배당을 안정적으로 유지.",
+          "rightTitle": "Constant payout",
+          "right": "이익의 일정 비율을 배당해 배당 변동성이 큼."
+        }
+      ],
+      "exampleProblem": "예시: Analysis of Dividends and Share Repurchases 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Analysis of Dividends and Share Repurchases에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Analysis of Dividends and Share Repurchases 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "analysis",
+        "analysis of dividends and share repurchases",
+        "and",
+        "corporate issuers",
+        "dividends",
+        "of",
+        "r13",
+        "reading 13",
+        "repurchases",
+        "share"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R14",
+      "readingNumber": 14,
+      "title": "Environmental, Social, and Governance (ESG) Considerations in Investment Analysis",
+      "topic": "Corporate Issuers",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "ESG 분석은 지배구조, 환경·사회 리스크, 기회요인을 투자판단에 통합하는 과정이다.",
+        "소유구조와 이사회 독립성은 minority shareholder 보호와 agency risk에 영향을 준다.",
+        "ESG는 단순 윤리 점수가 아니라 현금흐름, 비용, 할인율에 반영될 수 있는 재무적 이슈다."
+      ],
+      "examPoints": [
+        "Controlled company에서는 related-party transactions와 minority shareholder risk를 본다.",
+        "Material ESG issue와 immaterial issue를 구분한다.",
+        "ESG controversy는 valuation multiple과 cost of capital에 영향을 줄 수 있다."
+      ],
+      "formulas": [
+        "Value impact ≈ ΔExpected cash flows and/or ΔRisk premium",
+        "Governance risk may increase required return",
+        "ESG opportunity may increase growth or margin assumptions"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Governance risk",
+          "left": "의사결정·주주권리·이사회 구조 문제.",
+          "rightTitle": "Environmental/Social risk",
+          "right": "규제·평판·운영비·수요 변화 문제."
+        },
+        {
+          "leftTitle": "Financial materiality",
+          "left": "기업가치에 영향을 주는 ESG 이슈.",
+          "rightTitle": "Impact materiality",
+          "right": "사회·환경에 미치는 영향 중심."
+        }
+      ],
+      "exampleProblem": "예시: Environmental, Social, and Governance (ESG) Considerations in Investment Analysis 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Environmental, Social, and Governance (ESG) Considerations in Investment Analysis에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Environmental, Social, and Governance (ESG) Considerations in Investment Analysis 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "(esg)",
+        "analysis",
+        "and",
+        "considerations",
+        "corporate issuers",
+        "environmental",
+        "environmental, social, and governance (esg) considerations in investment analysis",
+        "governance",
+        "in",
+        "investment",
+        "r14",
+        "reading 14",
+        "social"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R15",
+      "readingNumber": 15,
+      "title": "Cost of Capital: Advanced Topics",
+      "topic": "Corporate Issuers",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Cost of capital advanced topics는 debt, equity, country risk, project risk 추정의 세부 방법을 다룬다.",
+        "Bottom-up beta와 comparable company 접근이 자주 사용된다.",
+        "할인율은 현금흐름의 위험과 통화, 명목/실질 기준과 일치해야 한다."
+      ],
+      "examPoints": [
+        "Cost of debt는 YTM, rating-based spread, matrix pricing 접근을 구분한다.",
+        "ERP는 historical estimate와 forward-looking estimate의 장단점을 비교한다.",
+        "Country risk premium은 해외 프로젝트 평가에서 자주 출제된다."
+      ],
+      "formulas": [
+        "re = rf + β × ERP",
+        "WACC = wd rd(1−t) + wp rp + we re",
+        "βasset = βequity / [1 + (1−t)D/E]"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Top-down",
+          "left": "거시 변수와 시장 수준에서 요구수익률 추정.",
+          "rightTitle": "Bottom-up",
+          "right": "peer beta와 사업위험에서 할인율 추정."
+        },
+        {
+          "leftTitle": "Nominal cash flow",
+          "left": "명목 할인율 사용.",
+          "rightTitle": "Real cash flow",
+          "right": "실질 할인율 사용."
+        }
+      ],
+      "exampleProblem": "예시: Cost of Capital: Advanced Topics 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Cost of Capital: Advanced Topics에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Cost of Capital: Advanced Topics 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "advanced",
+        "capital",
+        "corporate issuers",
+        "cost",
+        "cost of capital: advanced topics",
+        "of",
+        "r15",
+        "reading 15",
+        "topics"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R16",
+      "readingNumber": 16,
+      "title": "Corporate Restructuring",
+      "topic": "Corporate Issuers",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Corporate restructuring은 M&A, divestiture, spin-off, carve-out, LBO 등 기업구조 변화의 동기와 평가를 다룬다.",
+        "시너지는 매출 증가, 비용 절감, 세금효과, 자본비용 절감으로 구분한다.",
+        "거래 후 가치창출 여부는 paid premium 대비 realized synergy가 핵심이다."
+      ],
+      "examPoints": [
+        "Acquirer가 너무 높은 premium을 지불하면 시너지가 있어도 주주가치가 훼손될 수 있다.",
+        "Spin-off와 carve-out의 소유권·현금유입 차이를 구분한다.",
+        "LBO는 leverage, exit multiple, cash flow deleveraging이 수익률을 좌우한다."
+      ],
+      "formulas": [
+        "Value of combined firm = VA + VT + Synergy − Cash paid costs",
+        "Gain to target = offer price − pre-offer value",
+        "Gain to acquirer = synergy − premium paid"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Spin-off",
+          "left": "기존 주주에게 별도 회사 주식 배분.",
+          "rightTitle": "Equity carve-out",
+          "right": "자회사 지분 일부를 IPO로 매각."
+        },
+        {
+          "leftTitle": "Operating synergy",
+          "left": "매출·비용 개선.",
+          "rightTitle": "Financial synergy",
+          "right": "세금·부채수용력·자본비용 개선."
+        }
+      ],
+      "exampleProblem": "예시: Corporate Restructuring 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Corporate Restructuring에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Corporate Restructuring 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "corporate",
+        "corporate issuers",
+        "corporate restructuring",
+        "r16",
+        "reading 16",
+        "restructuring"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    }
+  ]
+}
