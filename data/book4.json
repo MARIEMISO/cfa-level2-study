@@ -1,0 +1,791 @@
+{
+  "bookId": "BOOK4",
+  "title": "BOOK4 | Fixed Income, Derivatives, and Alternative Investments",
+  "sourceFile": "CFA 2026 Level II SchweserNotes Book 4.pdf",
+  "readings": [
+    {
+      "id": "R23",
+      "readingNumber": 23,
+      "title": "The Term Structure and Interest Rate Dynamics",
+      "topic": "Fixed Income",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Term structure는 spot rate, forward rate, YTM, expected/realized return의 관계를 다룬다.",
+        "Bootstrapping은 par curve에서 zero-coupon spot curve를 순차적으로 추정한다.",
+        "Yield curve risk는 level, slope, curvature 변화로 분해해 관리한다."
+      ],
+      "examPoints": [
+        "Forward rate가 미래 spot rate의 예측치인지, risk premium이 포함된 약속금리인지 구분한다.",
+        "Rolldown return은 yield curve가 변하지 않는다는 가정에서 발생한다.",
+        "Key rate duration은 특정 만기 구간의 금리변화 민감도다."
+      ],
+      "formulas": [
+        "(1+S2)^2 = (1+S1)(1+1f1)",
+        "Bond value = Σ CF_t / (1+spot_t)^t",
+        "Swap spread = swap fixed rate − Treasury yield"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Spot rate",
+          "left": "오늘부터 특정 만기까지의 무이표 금리.",
+          "rightTitle": "Forward rate",
+          "right": "미래 기간에 적용되는 implied rate."
+        },
+        {
+          "leftTitle": "Level risk",
+          "left": "금리곡선 전체 평행 이동.",
+          "rightTitle": "Slope/curvature risk",
+          "right": "만기별 비평행 변화."
+        }
+      ],
+      "exampleProblem": "예시: The Term Structure and Interest Rate Dynamics 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "The Term Structure and Interest Rate Dynamics에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "The Term Structure and Interest Rate Dynamics 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "and",
+        "dynamics",
+        "fixed income",
+        "interest",
+        "r23",
+        "rate",
+        "reading 23",
+        "structure",
+        "term",
+        "the",
+        "the term structure and interest rate dynamics"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R24",
+      "readingNumber": 24,
+      "title": "The Arbitrage-Free Valuation Framework",
+      "topic": "Fixed Income",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Arbitrage-free valuation은 각 현금흐름을 일관된 spot rate 또는 interest rate tree로 할인해 무차익 가격을 구한다.",
+        "Binomial interest rate tree는 금리 경로별 현금흐름을 backward induction으로 평가한다.",
+        "Model calibration은 현재 term structure와 관측가격을 맞추는 과정이다."
+      ],
+      "examPoints": [
+        "Tree에서 마지막 현금흐름부터 현재로 역산한다.",
+        "Option-free bond는 spot curve 할인과 lattice valuation이 일관되어야 한다.",
+        "Monte Carlo는 경로의존성이 큰 상품에 활용된다."
+      ],
+      "formulas": [
+        "V_node = [CF_up + V_up + CF_down + V_down] / [2(1+r_node)]",
+        "Arbitrage-free price = PV of cash flows using spot curve",
+        "Calibrated tree matches observed zero-coupon curve"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Spot curve pricing",
+          "left": "경로 독립 현금흐름에 직접 할인.",
+          "rightTitle": "Binomial lattice",
+          "right": "금리 경로와 옵션 행사 가능성을 반영."
+        },
+        {
+          "leftTitle": "Calibration",
+          "left": "시장금리에 맞게 모델 조정.",
+          "rightTitle": "Simulation",
+          "right": "여러 가능한 경로를 생성해 평균 PV 추정."
+        }
+      ],
+      "exampleProblem": "예시: The Arbitrage-Free Valuation Framework 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "The Arbitrage-Free Valuation Framework에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "The Arbitrage-Free Valuation Framework 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "arbitrage-free",
+        "fixed income",
+        "framework",
+        "r24",
+        "reading 24",
+        "the",
+        "the arbitrage-free valuation framework",
+        "valuation"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R25",
+      "readingNumber": 25,
+      "title": "Valuation and Analysis of Bonds With Embedded Options",
+      "topic": "Fixed Income",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Embedded option bond는 straight bond와 option value의 결합으로 본다.",
+        "Callable bond는 발행자가 유리할 때 상환하므로 투자자에게 불리하고, putable bond는 투자자에게 유리하다.",
+        "OAS, effective duration, negative convexity가 핵심이다."
+      ],
+      "examPoints": [
+        "Callable bond value = straight bond − call option value.",
+        "금리변동성 증가 시 callable bond 가치는 하락, putable bond 가치는 상승한다.",
+        "Callable bond는 금리 하락 시 price appreciation이 제한된다."
+      ],
+      "formulas": [
+        "Callable bond = Straight bond − Call option",
+        "Putable bond = Straight bond + Put option",
+        "Effective duration = (V− − V+) / (2V0Δy)"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Callable bond",
+          "left": "발행자 옵션, 투자자에게 불리, negative convexity 가능.",
+          "rightTitle": "Putable bond",
+          "right": "투자자 옵션, 하방 가격 방어."
+        },
+        {
+          "leftTitle": "OAS",
+          "left": "옵션효과를 제거한 spread.",
+          "rightTitle": "Z-spread",
+          "right": "옵션을 명시적으로 조정하지 않은 spread."
+        }
+      ],
+      "exampleProblem": "예시: Valuation and Analysis of Bonds With Embedded Options 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Valuation and Analysis of Bonds With Embedded Options에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Valuation and Analysis of Bonds With Embedded Options 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "analysis",
+        "and",
+        "bonds",
+        "embedded",
+        "fixed income",
+        "of",
+        "options",
+        "r25",
+        "reading 25",
+        "valuation",
+        "valuation and analysis of bonds with embedded options",
+        "with"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R26",
+      "readingNumber": 26,
+      "title": "Credit Analysis Models",
+      "topic": "Fixed Income",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Credit analysis는 default probability, loss given default, exposure, recovery, spread를 평가한다.",
+        "Structural model은 기업자산가치가 부채보다 낮아질 때 default가 발생한다고 본다.",
+        "Reduced-form model은 default intensity를 통계적으로 모델링한다."
+      ],
+      "examPoints": [
+        "Expected loss = PD × LGD × exposure 구조가 기본이다.",
+        "Credit spread 변화는 default risk뿐 아니라 liquidity와 risk premium도 반영한다.",
+        "Securitized debt는 collateral pool, waterfall, prepayment risk를 함께 본다."
+      ],
+      "formulas": [
+        "Expected loss = Probability of default × Loss given default × Exposure",
+        "CVA ≈ Expected exposure × LGD × PD discounted",
+        "Credit spread ≈ Yield on risky bond − benchmark yield"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Structural model",
+          "left": "기업가치와 부채구조 기반, 경제적 직관 강함.",
+          "rightTitle": "Reduced-form model",
+          "right": "default intensity 기반, 시장자료 적합성 강함."
+        },
+        {
+          "leftTitle": "PD",
+          "left": "부도 확률.",
+          "rightTitle": "LGD",
+          "right": "부도 시 손실률."
+        }
+      ],
+      "exampleProblem": "예시: Credit Analysis Models 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Credit Analysis Models에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Credit Analysis Models 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "analysis",
+        "credit",
+        "credit analysis models",
+        "fixed income",
+        "models",
+        "r26",
+        "reading 26"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R27",
+      "readingNumber": 27,
+      "title": "Credit Default Swaps",
+      "topic": "Fixed Income",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "CDS는 reference entity의 credit event 발생 시 protection seller가 보상하는 신용파생상품이다.",
+        "CDS spread는 시장이 보는 신용위험 보상 가격으로 해석된다.",
+        "Hedging, curve view, basis trade, capital management에 활용된다."
+      ],
+      "examPoints": [
+        "Protection buyer는 보험료처럼 CDS spread를 지급하고 default 보호를 받는다.",
+        "CDS price는 PD, recovery rate, counterparty risk, liquidity에 영향받는다.",
+        "Bond-CDS basis가 arbitrage/relative value 문제로 출제된다."
+      ],
+      "formulas": [
+        "Approximate CDS spread ≈ Hazard rate × LGD",
+        "LGD = 1 − Recovery rate",
+        "Credit curve trade: express view on spread level or slope"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Protection buyer",
+          "left": "신용위험을 줄이거나 short credit view.",
+          "rightTitle": "Protection seller",
+          "right": "spread 수취, long credit exposure."
+        },
+        {
+          "leftTitle": "Single-name CDS",
+          "left": "개별 reference entity 위험.",
+          "rightTitle": "Index CDS",
+          "right": "신용시장 basket exposure."
+        }
+      ],
+      "exampleProblem": "예시: Credit Default Swaps 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Credit Default Swaps에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Credit Default Swaps 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "credit",
+        "credit default swaps",
+        "default",
+        "fixed income",
+        "r27",
+        "reading 27",
+        "swaps"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R28",
+      "readingNumber": 28,
+      "title": "Pricing and Valuation of Forward Commitments",
+      "topic": "Derivatives",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Forward commitments는 미래 거래가격을 오늘 정하고, no-arbitrage로 price와 value를 구분한다.",
+        "Pricing은 계약 체결 시 공정 forward price를 찾는 것이고 valuation은 이후 기존 계약의 가치를 평가하는 것이다.",
+        "Equity, fixed income, FRA, swap, currency/equity swap의 공통 원리는 carry와 discounting이다."
+      ],
+      "examPoints": [
+        "Forward price와 forward value를 혼동하지 않는다.",
+        "Carry benefit은 forward price를 낮추고 carry cost는 높인다.",
+        "Swap은 여러 forward contract의 묶음으로 해석할 수 있다."
+      ],
+      "formulas": [
+        "F0(T) = S0(1+r)^T for no income asset",
+        "F0(T) = [S0 − PV(income)](1+r)^T",
+        "Value of long forward = [St − PV(benefits) − PV(costs)] − F0/(1+r)^(T−t)"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Forward price",
+          "left": "계약가를 정하는 가격. 시작시 value가 0.",
+          "rightTitle": "Forward value",
+          "right": "기존 계약의 현재 가치. 시간이 지나면 ± 가능."
+        },
+        {
+          "leftTitle": "FRA",
+          "left": "미래 금리 차이를 현금정산.",
+          "rightTitle": "Interest rate swap",
+          "right": "고정금리와 변동금리 현금흐름 교환."
+        }
+      ],
+      "exampleProblem": "예시: Pricing and Valuation of Forward Commitments 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Pricing and Valuation of Forward Commitments에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Pricing and Valuation of Forward Commitments 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "and",
+        "commitments",
+        "derivatives",
+        "forward",
+        "of",
+        "pricing",
+        "pricing and valuation of forward commitments",
+        "r28",
+        "reading 28",
+        "valuation"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R29",
+      "readingNumber": 29,
+      "title": "Valuation of Contingent Claims",
+      "topic": "Derivatives",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Contingent claims는 미래 상태에 따라 payoff가 달라지는 옵션형 상품이다.",
+        "Binomial model은 up/down state에서 복제포트폴리오 또는 risk-neutral probability로 옵션을 평가한다.",
+        "Put-call parity, American option early exercise, Greeks가 핵심이다."
+      ],
+      "examPoints": [
+        "American call on non-dividend stock은 조기행사가 보통 최적이 아니다.",
+        "Put-call parity 위반은 arbitrage 포인트다.",
+        "Delta hedge는 underlying 변화에 대한 옵션 민감도를 중립화한다."
+      ],
+      "formulas": [
+        "c + X/(1+r)^T = p + S0",
+        "Δ = (Cu − Cd)/(Su − Sd)",
+        "Option value = [πCu + (1−π)Cd]/(1+r)"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "European option",
+          "left": "만기 행사만 가능.",
+          "rightTitle": "American option",
+          "right": "만기 전 행사 가능, 가치가 같거나 더 큼."
+        },
+        {
+          "leftTitle": "Delta",
+          "left": "기초자산 가격 민감도.",
+          "rightTitle": "Gamma",
+          "right": "Delta 변화 민감도."
+        }
+      ],
+      "exampleProblem": "예시: Valuation of Contingent Claims 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Valuation of Contingent Claims에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Valuation of Contingent Claims 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "claims",
+        "contingent",
+        "derivatives",
+        "of",
+        "r29",
+        "reading 29",
+        "valuation",
+        "valuation of contingent claims"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R30",
+      "readingNumber": 30,
+      "title": "Introduction to Commodities and Commodity Derivatives",
+      "topic": "Alternative Investments",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Commodities는 실물자산 특성과 storage, convenience yield, roll yield가 수익률을 좌우한다.",
+        "Futures curve가 contango인지 backwardation인지에 따라 roll return이 달라진다.",
+        "Commodity index construction은 weighting과 rebalancing 방식이 중요하다."
+      ],
+      "examPoints": [
+        "Convenience yield가 높으면 futures price를 낮추는 효과가 있다.",
+        "Backwardation에서 long futures는 positive roll yield를 기대할 수 있다.",
+        "Collateral return, price return, roll return을 구분한다."
+      ],
+      "formulas": [
+        "F0 = S0 × e^{(r + storage cost − convenience yield)T}",
+        "Total return ≈ spot return + roll return + collateral return",
+        "Roll yield depends on futures curve slope"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Contango",
+          "left": "선물가격이 현물보다 높거나 만기가 멀수록 높음. long roll yield에 불리.",
+          "rightTitle": "Backwardation",
+          "right": "선물가격이 현물보다 낮거나 만기가 멀수록 낮음. long roll yield에 유리."
+        },
+        {
+          "leftTitle": "Convenience yield",
+          "left": "실물 보유 편익.",
+          "rightTitle": "Storage cost",
+          "right": "보관비용."
+        }
+      ],
+      "exampleProblem": "예시: Introduction to Commodities and Commodity Derivatives 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Introduction to Commodities and Commodity Derivatives에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Introduction to Commodities and Commodity Derivatives 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "alternative investments",
+        "and",
+        "commodities",
+        "commodity",
+        "derivatives",
+        "introduction",
+        "introduction to commodities and commodity derivatives",
+        "r30",
+        "reading 30",
+        "to"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R31",
+      "readingNumber": 31,
+      "title": "Overview of Types of Real Estate Investment",
+      "topic": "Alternative Investments",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Real estate investment는 위치, 임대조건, 공실률, cap rate, financing이 가치의 핵심이다.",
+        "Private real estate는 낮은 유동성과 appraisal-based valuation 특성이 있다.",
+        "Due diligence에서는 임대계약, NOI 지속성, capex, 법률·환경 리스크를 점검한다."
+      ],
+      "examPoints": [
+        "NOI와 cap rate를 이용한 direct capitalization 계산이 기본이다.",
+        "Leverage는 equity return과 risk를 동시에 키운다.",
+        "Appraisal-based index는 smoothing과 lag 문제가 있다."
+      ],
+      "formulas": [
+        "Value = NOI / Cap rate",
+        "NOI = Rental income − operating expenses",
+        "Cap rate ≈ discount rate − growth rate"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Direct capitalization",
+          "left": "안정화된 NOI를 cap rate로 나눔.",
+          "rightTitle": "DCF approach",
+          "right": "기간별 NOI와 terminal value를 할인."
+        },
+        {
+          "leftTitle": "Private real estate",
+          "left": "유동성 낮고 평가주기 느림.",
+          "rightTitle": "Public RE securities",
+          "right": "시장가격 즉시 반영, 주식시장 영향 큼."
+        }
+      ],
+      "exampleProblem": "예시: Overview of Types of Real Estate Investment 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Overview of Types of Real Estate Investment에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Overview of Types of Real Estate Investment 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "alternative investments",
+        "estate",
+        "investment",
+        "of",
+        "overview",
+        "overview of types of real estate investment",
+        "r31",
+        "reading 31",
+        "real",
+        "types"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R32",
+      "readingNumber": 32,
+      "title": "Investments in Real Estate Through Publicly Traded Securities",
+      "topic": "Alternative Investments",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Publicly traded real estate securities는 REITs와 real estate operating companies를 통해 부동산 노출을 제공한다.",
+        "REIT는 임대수익과 배당, FFO/AFFO 분석이 핵심이다.",
+        "상장 리츠는 부동산 fundamentals와 주식시장 요인의 영향을 동시에 받는다."
+      ],
+      "examPoints": [
+        "FFO는 GAAP net income에서 부동산 감가상각과 매각손익을 조정한다.",
+        "NAV premium/discount와 implied cap rate를 해석한다.",
+        "REIT valuation은 P/FFO, dividend yield, NAV approach가 자주 쓰인다."
+      ],
+      "formulas": [
+        "FFO = Net income + depreciation − gains on property sales",
+        "AFFO ≈ FFO − recurring capital expenditures",
+        "NAV = Market value of assets − liabilities"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "REIT",
+          "left": "배당 중심, 부동산 자산 보유·운영.",
+          "rightTitle": "REOC",
+          "right": "배당요건이 약하고 개발·운영 재투자 성격 강함."
+        },
+        {
+          "leftTitle": "P/FFO",
+          "left": "리츠의 earnings multiple에 가까움.",
+          "rightTitle": "NAV approach",
+          "right": "자산가치 기반 평가."
+        }
+      ],
+      "exampleProblem": "예시: Investments in Real Estate Through Publicly Traded Securities 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Investments in Real Estate Through Publicly Traded Securities에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Investments in Real Estate Through Publicly Traded Securities 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "alternative investments",
+        "estate",
+        "in",
+        "investments",
+        "investments in real estate through publicly traded securities",
+        "publicly",
+        "r32",
+        "reading 32",
+        "real",
+        "securities",
+        "through",
+        "traded"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    },
+    {
+      "id": "R33",
+      "readingNumber": 33,
+      "title": "Hedge Fund Strategies",
+      "topic": "Alternative Investments",
+      "sourceNote": "Uploaded Schweser 2026 Level II PDF를 바탕으로 긴 원문을 복사하지 않고 학습용으로 압축·재구성한 요약입니다.",
+      "coreSummary": [
+        "Hedge fund strategies는 equity hedge, event-driven, relative value, macro, managed futures 등으로 나뉜다.",
+        "수익 원천은 alpha, leverage, liquidity premium, complexity premium, factor exposure로 분해할 수 있다.",
+        "Due diligence와 fee, survivorship/backfill bias 이해가 중요하다."
+      ],
+      "examPoints": [
+        "Relative value는 가격 괴리 축소를 노리고 leverage 사용이 많다.",
+        "Event-driven은 merger, distressed, restructuring catalyst에 의존한다.",
+        "Hedge fund index는 selection bias와 survivorship bias가 크다."
+      ],
+      "formulas": [
+        "Net return after fees ≈ Gross return − management fee − incentive fee",
+        "Information ratio = Active return / Active risk",
+        "Portfolio impact depends on correlation and marginal contribution to risk"
+      ],
+      "comparisons": [
+        {
+          "leftTitle": "Equity hedge",
+          "left": "주식 long/short로 alpha 추구.",
+          "rightTitle": "Market neutral",
+          "right": "시장 beta를 낮추고 security selection 중심."
+        },
+        {
+          "leftTitle": "Global macro",
+          "left": "거시 전망 기반 방향성 베팅.",
+          "rightTitle": "Relative value",
+          "right": "가격 괴리 수렴 베팅."
+        }
+      ],
+      "exampleProblem": "예시: Hedge Fund Strategies 관련 vignette에서 입력값이 주어졌다고 가정하고, 먼저 관점과 적용 모델을 고른 뒤 핵심 공식으로 값을 계산하고 결과의 방향성을 해석한다.",
+      "quizzes": [
+        {
+          "question": "Hedge Fund Strategies에서 시험에 가장 적합한 접근은 무엇인가?",
+          "choices": [
+            "정의만 암기하고 계산은 생략한다",
+            "모델의 가정, 입력값, 결과 해석을 함께 확인한다",
+            "항상 하나의 공식만 적용한다"
+          ],
+          "answer": 1,
+          "explanation": "Level II는 vignette 기반이므로 계산 전 가정과 관점, 계산 후 해석을 함께 요구하는 경우가 많다."
+        },
+        {
+          "question": "Hedge Fund Strategies 학습 시 가장 먼저 확인할 것은?",
+          "choices": [
+            "문제에서 요구하는 관점과 데이터의 의미",
+            "가장 긴 공식",
+            "선택지의 길이"
+          ],
+          "answer": 0,
+          "explanation": "입력값의 기준과 관점을 잘못 잡으면 공식이 맞아도 답이 틀린다."
+        }
+      ],
+      "keywords": [
+        "alternative investments",
+        "fund",
+        "hedge",
+        "hedge fund strategies",
+        "r33",
+        "reading 33",
+        "strategies"
+      ],
+      "importantNote": "중요 문장 요지: 문제는 항상 해당 모델이 왜 적합한지와 결과가 투자판단에 어떤 의미인지까지 묻는 방향으로 정리하세요."
+    }
+  ]
+}
