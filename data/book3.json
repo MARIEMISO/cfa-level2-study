@@ -17,94 +17,252 @@
         {
           "id": "17.a",
           "label": "LOS 17.a",
-          "title": "Valuation, intrinsic value, perceived mispricing",
-          "losText": "valuation과 intrinsic value를 정의하고, analyst가 perceived mispricing을 인식하는 원천을 설명한다.",
-          "why": "Equity Valuation 전체의 출발점이다. 뒤에서 DDM, FCFF, multiples, residual income을 배울 때 결국 묻는 질문은 시장가격이 가치 대비 싼지 비싼지다.",
+          "title": "Valuation, intrinsic value, and perceived mispricing",
+          "losText": "define valuation and intrinsic value and explain sources of perceived mispricing",
+          "why": "R17의 첫 개념이고 Equity Valuation 전체의 출발점이다. 뒤에서 DDM, FCFF, multiples, residual income을 배울 때 결국 같은 질문으로 돌아온다. 시장가격이 가치 대비 싼가, 비싼가, 아니면 내가 가정을 잘못 둔 건가.",
           "sections": [
             {
               "title": "1. 한국어로 풀면",
-              "body": "valuation은 자산의 가치를 추정하는 과정이고, intrinsic value는 fundamentals를 반영한 내재가치다. analyst는 자신의 가치 추정치와 market price를 비교하면서 undervalued, fairly valued, overvalued 여부를 판단한다."
+              "body": "valuation과 intrinsic value를 정의하고, 왜 analyst가 시장가격이 잘못되어 있다고 느낄 수 있는지 설명하라는 뜻이야. 여기서 핵심은 시장가격과 가치가 항상 같다고 보지 않는다는 점이야. analyst는 기업의 fundamentals를 바탕으로 내재가치를 추정하고, 그 추정치와 market price를 비교해서 undervalued, fairly valued, overvalued 여부를 판단해."
             },
             {
-              "title": "2. Intuition: 좋은 회사 찾기가 아니라 가격과 가치 비교",
-              "body": "주식투자에서 핵심 질문은 “좋은 회사인가?”가 아니라 “현재 가격 대비 좋은 투자자인가?”다. 성장성이 뛰어나도 이미 market price에 과하게 반영되어 있으면 expected return은 낮을 수 있고, 평범한 회사라도 시장이 지나치게 비관적으로 가격을 매겼다면 투자기회가 될 수 있다.",
+              "title": "2. 이 LOS의 위치",
+              "body": "이 LOS는 R17의 첫 번째 개념이지만 단순 암기용 정의가 아니야. Equity Valuation 전체의 언어를 잡는 부분이야. DDM에서는 dividend를 할인해서 intrinsic value를 계산하고, FCFF/FCFE에서는 free cash flow를 할인해서 intrinsic value를 계산하고, multiples에서는 peer 대비 가격이 정당한지 판단하고, residual income에서는 book value와 초과이익으로 intrinsic value를 계산해. 결국 뒤의 모든 모델은 market price와 intrinsic value를 비교하기 위한 도구야."
+            },
+            {
+              "title": "3. Intuition: valuation은 좋은 회사 찾기가 아니라 가격과 가치 비교야",
+              "body": "주식투자에서 제일 중요한 질문은 사실 이 회사 좋은 회사야?가 아니라 이 회사가 현재 가격 대비 좋은 투자야?에 가까워. 좋은 회사라도 너무 비싸면 나쁜 투자가 될 수 있고, 평범한 회사라도 너무 싸면 좋은 투자가 될 수 있어. 그래서 valuation은 기업을 좋아하는 작업이 아니라, 기업의 가치와 시장가격 사이의 차이를 냉정하게 보는 작업이야.",
               "table": [
+                [
+                  "항목",
+                  "값",
+                  "해석"
+                ],
                 [
                   "Market price",
-                  "Analyst IV estimate",
-                  "판단"
-                ],
-                [
                   "80",
-                  "100",
-                  "analyst 관점 undervalued"
+                  "시장에서 실제 거래되는 가격"
                 ],
                 [
+                  "Analyst의 intrinsic value estimate",
                   "100",
-                  "100",
-                  "fairly valued"
+                  "내 모델과 가정으로 계산한 가치"
                 ],
                 [
-                  "120",
-                  "100",
-                  "overvalued"
+                  "판단",
+                  "Undervalued 가능",
+                  "가격 80보다 가치 추정치 100이 높기 때문"
                 ]
               ]
             },
             {
-              "title": "3. Technical explanation",
-              "body": "market price는 실제 거래가격이고, intrinsic value는 기업의 현금흐름, 성장률, risk, 자본구조, 자산가치 등을 반영해 추정한 가치다. 중요한 점은 intrinsic value 자체도 관찰 가능한 숫자가 아니라 모델과 가정의 결과라는 것이다. 그래서 analyst estimate of intrinsic value와 true intrinsic value는 다를 수 있다."
-            },
-            {
-              "title": "4. Perceived mispricing의 의미",
-              "body": "CFA가 “perceived”라는 단어를 붙이는 이유가 중요하다. analyst가 보기에는 시장가격이 틀린 것 같아도 실제로는 analyst의 성장률, discount rate, margin, terminal value 가정이 틀렸을 수 있다. 따라서 analyst estimate − market price에는 actual mispricing과 valuation error가 함께 섞일 수 있다.",
-              "bullets": [
-                "Analyst estimate > price라고 해서 무조건 시장이 틀린 것은 아니다.",
-                "Valuation error가 크면 싸 보이는 주식이 실제로는 value trap일 수 있다.",
-                "그래서 sensitivity analysis와 scenario analysis가 valuation의 필수 절차가 된다."
-              ]
-            },
-            {
-              "title": "5. Mispricing이 생기는 원천",
-              "body": "시장은 항상 완벽하지 않다. 정보해석 차이, 단기 수급, 유동성 부족, 회계정보 질, 심리적 과잉반응, 복잡한 사업구조, 불확실한 terminal growth 등이 market price와 intrinsic value의 괴리를 만들 수 있다.",
-              "table": [
-                [
-                  "원인",
-                  "시험에서의 해석"
-                ],
-                [
-                  "정보 차이",
-                  "같은 공시를 봐도 cash flow 지속성 해석이 다를 수 있음"
-                ],
-                [
-                  "가정 차이",
-                  "growth, margin, required return, terminal value 차이"
-                ],
-                [
-                  "시장 심리",
-                  "공포나 테마 과열로 가격이 fundamentals에서 이탈"
-                ],
-                [
-                  "유동성",
-                  "거래량 부족, 강제매도, 리밸런싱으로 가격 왜곡"
-                ],
-                [
-                  "회계정보 질",
-                  "earnings quality가 낮으면 valuation input이 불안정"
-                ]
-              ]
-            },
-            {
-              "title": "6. 실무 적용",
-              "body": "리서치 리포트의 target price, IPO 공모가 적정성, M&A 인수가격, 자사주 매입의 value-accretive 여부, 포트폴리오 overweight/underweight 판단이 모두 이 구조에서 출발한다. IPO 분석에서는 공모가가 peer 대비 싼지 비싼지만 보는 것이 아니라, 성장률과 margin 가정이 그 가격을 정당화하는지를 봐야 한다."
-            },
-            {
-              "title": "7. 헷갈리는 개념 비교",
-              "body": "intrinsic value는 fundamentals 기반 가치이고 market price는 거래가격이다. fair market value는 독립적 buyer와 seller가 합리적으로 거래할 수 있는 가격 개념이고, investment value는 특정 투자자에게만 의미 있는 synergy나 전략가치를 포함할 수 있다.",
+              "title": "4. Market price와 intrinsic value를 반드시 분리해서 봐야 해",
+              "body": "Market price는 관찰 가능한 숫자야. HTS에 바로 찍히고 실제 거래가 일어나는 가격이지. 반면 intrinsic value는 눈에 직접 보이지 않아. 매출 성장률, margin, reinvestment, discount rate, terminal growth, risk premium 같은 가정을 넣어 계산한 결과야. 그래서 intrinsic value는 하나의 절대적 진실이라기보다 analyst가 추정한 값에 가까워. 이 차이를 모르면 analyst estimate가 market price보다 높다는 이유만으로 바로 시장이 틀렸다고 착각하게 돼.",
               "table": [
                 [
                   "개념",
+                  "의미",
+                  "주의점"
+                ],
+                [
+                  "Market price",
+                  "시장에서 실제 거래되는 가격",
+                  "관찰 가능하지만 항상 가치와 같다고 볼 수는 없음"
+                ],
+                [
+                  "Intrinsic value",
+                  "fundamentals를 반영한 내재가치",
+                  "직접 관찰되지 않고 모델로 추정해야 함"
+                ],
+                [
+                  "Analyst estimate of IV",
+                  "analyst가 계산한 내재가치 추정치",
+                  "actual intrinsic value와 다를 수 있음"
+                ]
+              ]
+            },
+            {
+              "title": "5. Technical explanation: valuation과 intrinsic value",
+              "body": "Valuation은 자산의 가치를 추정하는 과정이야. Equity Valuation에서는 보통 common stock, preferred stock, private company equity, business segment, 또는 전체 기업의 equity value를 평가해. Intrinsic value는 기업의 자산, 현금흐름, 성장성, 위험, 지배구조, competitive position 같은 fundamentals를 충분히 반영한 가치라고 보면 돼. 다만 시험에서 중요한 건 intrinsic value가 market price와 항상 같지 않을 수 있다는 점이야. 시장이 완전히 informationally efficient하지 않거나, 투자자들이 정보를 다르게 해석하거나, analyst의 가정이 시장 consensus와 다르면 두 값이 달라질 수 있어."
+            },
+            {
+              "title": "6. 핵심 공식: perceived mispricing 분해",
+              "body": "여기서 가장 중요한 공식이 빠지면 안 돼. analyst가 보는 mispricing은 단순히 시장가격이 틀렸다는 뜻이 아니야. analyst의 intrinsic value estimate와 market price의 차이는 actual mispricing과 valuation error로 나눌 수 있어.",
+              "bullets": [
+                "IV_analyst − P: analyst가 인식한 mispricing, 즉 perceived mispricing",
+                "IV_actual − P: 실제 내재가치와 시장가격의 차이, 즉 actual mispricing",
+                "IV_analyst − IV_actual: analyst의 valuation error",
+                "따라서 내가 싸다고 느낀 이유가 시장의 오류 때문일 수도 있지만, 내 모델이 틀렸기 때문일 수도 있어."
+              ]
+            },
+            {
+              "title": "7. 공식을 말로 풀면",
+              "body": "내가 계산한 가치가 100이고 시장가격이 80이면, 겉으로는 20만큼 undervalued처럼 보여. 그런데 실제 intrinsic value가 90이었다면 어떻게 될까? 실제 mispricing은 10뿐이고, 나머지 10은 내 valuation error야. 반대로 실제 intrinsic value가 110이었다면 내가 오히려 보수적으로 평가한 것이고, actual mispricing은 내가 본 것보다 더 클 수 있어.",
+              "table": [
+                [
+                  "상황",
+                  "수치",
                   "의미"
+                ],
+                [
+                  "Market price P",
+                  "80",
+                  "시장에서 거래되는 가격"
+                ],
+                [
+                  "IV_analyst",
+                  "100",
+                  "내가 계산한 가치"
+                ],
+                [
+                  "IV_actual",
+                  "90",
+                  "실제 내재가치라고 가정"
+                ],
+                [
+                  "Perceived mispricing",
+                  "100 − 80 = 20",
+                  "내 눈에는 20만큼 싸 보임"
+                ],
+                [
+                  "Actual mispricing",
+                  "90 − 80 = 10",
+                  "실제로는 10만큼만 싸다"
+                ],
+                [
+                  "Valuation error",
+                  "100 − 90 = 10",
+                  "나의 가치평가 오차"
+                ]
+              ]
+            },
+            {
+              "title": "8. 왜 perceived mispricing이라고 표현할까",
+              "body": "CFA가 그냥 mispricing이라고 하지 않고 perceived mispricing이라고 하는 이유가 여기 있어. analyst가 보기에는 가격이 틀린 것 같아도, 실제로는 analyst의 valuation이 틀렸을 수 있기 때문이야. 특히 terminal growth를 0.5%p만 높게 잡거나 WACC를 낮게 잡으면 valuation 결과가 크게 올라가. 그러면 싸 보이는 종목이 실제로는 싸지 않을 수 있어. 그래서 valuation에서는 point estimate 하나보다 range, sensitivity analysis, scenario analysis가 중요해져."
+            },
+            {
+              "title": "9. 왜 이 개념이 존재할까",
+              "body": "시장이 항상 완벽하게 효율적이면 analyst가 mispricing을 찾을 이유가 거의 없어. 하지만 현실에서는 정보가 동시에 반영되지 않고, 같은 정보를 봐도 해석이 다르고, 단기 수급이나 심리가 가격을 밀어붙이기도 해. 그래서 analyst는 시장가격이 intrinsic value에서 벗어난 종목을 찾으려고 해. 그 차이를 잘 찾아내면 positive risk-adjusted return, 즉 위험 대비 초과수익을 얻을 수 있다고 보는 거야.",
+              "bullets": [
+                "단기 뉴스에 과도하게 반응하는 경우",
+                "테마 과열로 growth expectation이 과장되는 경우",
+                "유동성 부족이나 강제매도로 가격이 눌리는 경우",
+                "회계정보 질이 낮아 earnings sustainability가 오해되는 경우",
+                "복잡한 사업구조 때문에 SOTP 가치가 제대로 반영되지 않는 경우"
+              ]
+            },
+            {
+              "title": "10. 투자자가 언제 쓰는가",
+              "body": "이 개념은 실제 valuation 업무의 거의 모든 출발점이야. 리서치 리포트의 target price도 결국 intrinsic value estimate의 한 형태고, IPO 분석도 공모가가 intrinsic value 대비 비싼지 싼지 보는 작업이야. M&A에서는 인수가격이 합리적인지, 자사주 매입에서는 buyback이 value-accretive한지, 포트폴리오 운용에서는 overweight 또는 underweight를 할지 판단하는 데 쓰여.",
+              "table": [
+                [
+                  "상황",
+                  "사용 방식"
+                ],
+                [
+                  "리서치 리포트",
+                  "target price와 현재가 비교"
+                ],
+                [
+                  "IPO 분석",
+                  "공모가가 성장성과 cash flow로 정당화되는지 판단"
+                ],
+                [
+                  "M&A",
+                  "인수가격이 standalone value 또는 synergy value 대비 합리적인지 판단"
+                ],
+                [
+                  "포트폴리오 운용",
+                  "overweight, market weight, underweight 결정"
+                ],
+                [
+                  "자사주 매입",
+                  "주가가 intrinsic value보다 낮을 때 주주가치에 유리할 수 있음"
+                ],
+                [
+                  "사모투자",
+                  "entry valuation과 exit value를 비교"
+                ]
+              ]
+            },
+            {
+              "title": "11. 마리 실무랑 연결하면",
+              "body": "IPO 분석에서 이미 이걸 하고 있는 거야. 공모가가 peer multiple 대비 낮은지 높은지만 보는 게 아니라, 그 회사의 성장률, margin, capex, working capital, cash conversion이 그 가격을 정당화하는지 보는 게 valuation이야. 예를 들어 P/E가 낮아 보여도 earnings quality가 낮거나 일회성 이익이 섞여 있으면 싸다고 보기 어렵고, 반대로 P/E가 높아도 ROE가 높고 성장 지속성이 강하면 어느 정도 정당화될 수 있어."
+            },
+            {
+              "title": "12. Mispricing의 원인",
+              "body": "Market price와 intrinsic value가 달라 보이는 이유는 여러 가지야. CFA 시험에서는 단순히 시장이 비효율적이다 정도로 끝내기보다, 왜 analyst의 추정치와 시장가격이 달라졌는지를 구체적으로 생각해야 해.",
+              "table": [
+                [
+                  "원인",
+                  "설명",
+                  "시험 포인트"
+                ],
+                [
+                  "정보 차이",
+                  "일부 투자자가 더 좋은 정보 또는 해석력을 가짐",
+                  "정보 우위가 있다면 mispricing을 발견할 수 있음"
+                ],
+                [
+                  "가정 차이",
+                  "growth, margin, discount rate, terminal growth가 다름",
+                  "valuation 결과가 input에 민감함"
+                ],
+                [
+                  "시장 심리",
+                  "과도한 낙관 또는 공포",
+                  "가격이 fundamentals에서 이탈 가능"
+                ],
+                [
+                  "유동성 문제",
+                  "거래량 부족, 강제매도, 패시브 리밸런싱",
+                  "단기 가격 왜곡 가능"
+                ],
+                [
+                  "회계정보 질",
+                  "earnings quality, accruals, one-off item 문제",
+                  "reported earnings를 그대로 믿으면 위험"
+                ],
+                [
+                  "복잡한 사업구조",
+                  "segment별 가치가 다르거나 SOTP가 필요",
+                  "단순 multiple로 오평가 가능"
+                ]
+              ]
+            },
+            {
+              "title": "13. 어떻게 적용하는가",
+              "body": "기본 판단은 간단해. intrinsic value estimate가 market price보다 높으면 analyst 관점에서는 undervalued, 거의 같으면 fairly valued, 낮으면 overvalued야. 하지만 이 판단은 항상 내 valuation estimate가 충분히 신뢰할 만할 때만 의미 있어. 그래서 뒤에서 model selection, sensitivity analysis, scenario analysis, accounting adjustment가 계속 중요해지는 거야.",
+              "table": [
+                [
+                  "관계",
+                  "판단",
+                  "투자 행동 예시"
+                ],
+                [
+                  "Intrinsic value > Market price",
+                  "Undervalued",
+                  "Buy 또는 Overweight"
+                ],
+                [
+                  "Intrinsic value ≈ Market price",
+                  "Fairly valued",
+                  "Hold 또는 Market weight"
+                ],
+                [
+                  "Intrinsic value < Market price",
+                  "Overvalued",
+                  "Sell 또는 Underweight"
+                ]
+              ]
+            },
+            {
+              "title": "14. 유사 개념과 구분",
+              "body": "오늘은 intrinsic value와 market price를 확실히 잡으면 돼. 다만 R17 뒤쪽에서는 fair market value, investment value, going concern value, liquidation value도 나오니까 여기서 큰 그림을 같이 잡아두면 좋아.",
+              "table": [
+                [
+                  "개념",
+                  "구분"
                 ],
                 [
                   "Intrinsic value",
@@ -112,15 +270,23 @@
                 ],
                 [
                   "Market price",
-                  "시장에서 실제 형성된 가격"
+                  "실제 거래 가격"
                 ],
                 [
                   "Fair market value",
-                  "합리적 거래당사자 사이의 공정시장가치"
+                  "willing buyer와 willing seller가 합리적으로 거래할 수 있는 공정시장가치"
                 ],
                 [
                   "Investment value",
-                  "특정 buyer에게만 의미 있는 가치"
+                  "특정 buyer에게만 의미 있는 가치. synergy 포함 가능"
+                ],
+                [
+                  "Going concern value",
+                  "기업이 계속 영업한다는 전제의 가치"
+                ],
+                [
+                  "Liquidation value",
+                  "자산을 따로 팔고 부채를 갚은 뒤 남는 가치"
                 ],
                 [
                   "Target price",
@@ -129,63 +295,93 @@
               ]
             },
             {
-              "title": "8. CFA trap",
-              "body": "좋은 회사는 좋은 투자라는 생각, 낮은 P/E는 undervalued라는 생각, analyst estimate가 true intrinsic value라는 생각이 대표 함정이다. CFA 문제는 주어진 정보만으로 overvalued/undervalued를 단정할 수 있는지 자주 묻는다.",
+              "title": "15. Common mistakes & CFA traps",
+              "body": "이 LOS에서 수험생들이 가장 많이 하는 실수는 analyst estimate를 actual intrinsic value처럼 취급하는 거야. 시험에서는 analyst가 market price보다 높은 value를 계산했다는 정보만 주고, 그 차이가 actual mispricing인지 valuation error인지 묻는 식으로 함정을 만들 수 있어.",
               "bullets": [
-                "낮은 P/E는 낮은 growth, 낮은 ROE, 높은 risk 때문일 수 있다.",
-                "주가가 하락했어도 intrinsic value가 더 크게 하락했다면 여전히 비쌀 수 있다.",
-                "가치평가 결과는 point estimate보다 range로 보는 것이 더 안전하다."
+                "Trap 1. 좋은 회사 = 좋은 투자라고 생각하기. 좋은 회사라도 너무 비싸면 나쁜 투자야.",
+                "Trap 2. 낮은 P/E = 무조건 undervalued라고 생각하기. 낮은 성장률, 낮은 ROE, 높은 risk 때문일 수 있어.",
+                "Trap 3. Analyst estimate = actual intrinsic value라고 생각하기. analyst도 틀릴 수 있어.",
+                "Trap 4. 주가가 하락했으니 싸다고 생각하기. intrinsic value가 더 크게 하락했다면 여전히 비쌀 수 있어.",
+                "Trap 5. valuation 결과를 단일 숫자로만 보기. 실제로는 range와 sensitivity가 더 중요해."
               ]
             },
             {
-              "title": "9. 한 줄 정리",
-              "body": "Valuation은 market price와 intrinsic value estimate를 비교해 perceived mispricing을 찾는 과정이지만, 그 차이에는 실제 시장 오류뿐 아니라 analyst의 valuation error도 포함될 수 있다."
+              "title": "16. LOS 17.a 한 줄 정리",
+              "body": "Valuation은 market price와 intrinsic value를 비교해 mispricing을 찾는 과정이고, analyst가 보는 mispricing은 실제 시장 오류와 analyst 자신의 valuation error가 섞여 있을 수 있다."
             }
           ],
           "formulas": [
-            "Perceived mispricing ≈ Analyst estimate of intrinsic value − Market price",
-            "Analyst estimate − Market price = Actual mispricing + Valuation error"
+            "IV_{analyst} - P = (IV_{actual} - P) + (IV_{analyst} - IV_{actual})",
+            "Perceived mispricing = Analyst's estimate of intrinsic value − Market price",
+            "Actual mispricing = Actual intrinsic value − Market price",
+            "Valuation error = Analyst's estimate of intrinsic value − Actual intrinsic value"
           ],
           "keywords": [
             "valuation",
             "intrinsic value",
             "market price",
             "perceived mispricing",
+            "actual mispricing",
             "valuation error",
+            "IV analyst",
+            "IV actual",
             "undervalued",
             "overvalued",
-            "target price"
+            "fairly valued",
+            "target price",
+            "fundamentals",
+            "sensitivity analysis"
           ],
           "quiz": [
             {
-              "question": "Market price 80, analyst IV estimate 100이면 analyst 관점의 판단은?",
+              "question": "Market price가 80이고 analyst의 intrinsic value estimate가 100이면 analyst 관점에서 이 주식은?",
               "choices": [
                 "Overvalued",
                 "Fairly valued",
                 "Undervalued"
               ],
               "answer": 2,
-              "explanation": "analyst 추정 가치가 시장가격보다 높으므로 analyst 관점에서는 undervalued다. 단, analyst estimate가 틀렸을 가능성은 남아 있다."
+              "explanation": "analyst estimate가 market price보다 높으므로 analyst 관점에서는 undervalued다. 단, 이 차이가 actual mispricing인지 valuation error인지는 별도로 생각해야 한다."
             },
             {
-              "question": "CFA에서 perceived mispricing이라고 부르는 이유로 가장 적절한 것은?",
+              "question": "CFA에서 단순히 mispricing이 아니라 perceived mispricing이라고 표현하는 가장 중요한 이유는?",
               "choices": [
-                "시장은 항상 틀리기 때문",
-                "analyst가 인식한 괴리가 실제 mispricing이 아닐 수도 있기 때문",
-                "intrinsic value는 market price와 항상 같기 때문"
+                "market price는 항상 틀리기 때문에",
+                "analyst가 본 가격 괴리가 실제 시장 오류가 아니라 analyst의 valuation error일 수도 있기 때문에",
+                "intrinsic value는 항상 market price와 같기 때문에"
               ],
               "answer": 1,
-              "explanation": "analyst estimate에는 valuation error가 있을 수 있다. 그래서 단정적 mispricing이 아니라 perceived mispricing이다."
+              "explanation": "perceived라는 표현은 analyst가 인식한 mispricing에 actual mispricing과 valuation error가 함께 섞일 수 있음을 강조한다."
             },
             {
-              "question": "낮은 P/E만으로 undervalued라고 결론내리기 위험한 이유는?",
+              "question": "IV_analyst=100, IV_actual=90, P=80일 때 valuation error는?",
               "choices": [
-                "P/E는 항상 조작되기 때문",
-                "낮은 성장률, 높은 risk, 낮은 earnings quality가 반영됐을 수 있기 때문",
-                "P/E는 equity valuation에서 사용하지 않기 때문"
+                "10",
+                "20",
+                "30"
+              ],
+              "answer": 0,
+              "explanation": "Valuation error = IV_analyst − IV_actual = 100 − 90 = 10이다."
+            },
+            {
+              "question": "좋은 회사인데도 valuation 관점에서 나쁜 투자가 될 수 있는 이유로 가장 적절한 것은?",
+              "choices": [
+                "좋은 회사는 항상 undervalued이기 때문에",
+                "market price가 intrinsic value보다 높을 수 있기 때문에",
+                "intrinsic value는 분석할 필요가 없기 때문에"
               ],
               "answer": 1,
-              "explanation": "낮은 multiple은 싸다는 신호일 수도 있지만, fundamentals가 나쁘다는 신호일 수도 있다."
+              "explanation": "좋은 회사라도 현재 가격이 내재가치보다 높으면 expected return이 낮거나 음수일 수 있다."
+            },
+            {
+              "question": "A기업 P/E가 5배이고 업종 평균이 15배라는 정보만으로 undervalued라고 단정하면 위험한 이유는?",
+              "choices": [
+                "P/E는 절대 사용하면 안 되는 지표라서",
+                "낮은 P/E가 낮은 성장률, 낮은 ROE, 높은 리스크, 낮은 earnings quality를 반영한 결과일 수 있어서",
+                "업종 평균 P/E는 항상 틀려서"
+              ],
+              "answer": 1,
+              "explanation": "relative valuation에서는 multiple 차이의 원인이 fundamentals 차이인지 mispricing인지 구분해야 한다."
             }
           ]
         },
