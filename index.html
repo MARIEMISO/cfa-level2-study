@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CFA Level II Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="badge">CFA L2</span>
+        <h1>Study Hub</h1>
+        <p>BOOK별 Reading 요약 · 퀴즈 · 오답노트</p>
+      </div>
+      <div class="progress-card">
+        <div class="progress-top"><span>전체 진행률</span><strong id="progressText">0%</strong></div>
+        <div class="progress-bar"><div id="progressFill"></div></div>
+        <small id="progressDetail">0 / 0 readings 완료</small>
+      </div>
+      <nav id="bookNav" class="book-nav"></nav>
+      <div class="side-footer">JSON만 교체하면 Reading 목록과 본문이 자동 업데이트됩니다.</div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <button id="menuBtn" class="menu-btn" aria-label="메뉴 열기">☰</button>
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="개념, 공식, 키워드 검색" />
+          <button id="clearSearch" title="검색 초기화">×</button>
+        </div>
+      </header>
+      <section id="readingListPanel" class="reading-list-panel"></section>
+      <section id="mainPanel" class="main-panel empty">
+        <h2>왼쪽에서 BOOK과 Reading을 선택해줘.</h2>
+        <p>마지막으로 본 Reading은 다음 방문 때 자동으로 열립니다.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
