@@ -1,0 +1,215 @@
+{
+ "bookId": "BOOK1",
+ "shortTitle": "Quant · Economics",
+ "title": "BOOK1 | Quantitative Methods and Economics",
+ "tabColor": "#33608C",
+ "sourceFile": "2026 Level II Schweser 1.pdf",
+ "version": "v4-textbook",
+ "readings": [
+  {
+   "id": "R1",
+   "readingNumber": 1,
+   "title": "Multiple Regression",
+   "titleKo": "다중회귀분석",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R1 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "1.a",
+     "title": "다중회귀의 용도와 기본 구조",
+     "titleKo": "다중회귀의 용도와 기본 구조"
+    },
+    {
+     "id": "1.b",
+     "title": "계수 해석과 가설검정",
+     "titleKo": "계수 해석과 가설검정"
+    },
+    {
+     "id": "1.c",
+     "title": "ANOVA · R² · adjusted R²",
+     "titleKo": "ANOVA · R² · adjusted R²"
+    },
+    {
+     "id": "1.d",
+     "title": "모형 가정과 위반: 이분산 · 자기상관 · 다중공선성",
+     "titleKo": "모형 가정과 위반: 이분산 · 자기상관 · 다중공선성"
+    },
+    {
+     "id": "1.e",
+     "title": "모형 오설정과 질적 종속변수",
+     "titleKo": "모형 오설정과 질적 종속변수"
+    }
+   ]
+  },
+  {
+   "id": "R2",
+   "readingNumber": 2,
+   "title": "Time-Series Analysis",
+   "titleKo": "시계열분석",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R2 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "2.a",
+     "title": "추세모형: 선형 vs 로그선형",
+     "titleKo": "추세모형: 선형 vs 로그선형"
+    },
+    {
+     "id": "2.b",
+     "title": "AR 모형과 공분산 정상성",
+     "titleKo": "AR 모형과 공분산 정상성"
+    },
+    {
+     "id": "2.c",
+     "title": "평균회귀 · 자기상관 검정",
+     "titleKo": "평균회귀 · 자기상관 검정"
+    },
+    {
+     "id": "2.d",
+     "title": "랜덤워크 · 단위근 · 계절성",
+     "titleKo": "랜덤워크 · 단위근 · 계절성"
+    },
+    {
+     "id": "2.e",
+     "title": "ARCH와 회귀 응용",
+     "titleKo": "ARCH와 회귀 응용"
+    }
+   ]
+  },
+  {
+   "id": "R3",
+   "readingNumber": 3,
+   "title": "Machine Learning",
+   "titleKo": "머신러닝",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R3 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "3.a",
+     "title": "지도 · 비지도학습과 딥러닝 개관",
+     "titleKo": "지도 · 비지도학습과 딥러닝 개관"
+    },
+    {
+     "id": "3.b",
+     "title": "과적합과 일반화",
+     "titleKo": "과적합과 일반화"
+    },
+    {
+     "id": "3.c",
+     "title": "주요 알고리즘: penalized regression · SVM · KNN · CART · 앙상블 · 신경망",
+     "titleKo": "주요 알고리즘: penalized regression · SVM · KNN · CART · 앙상블 · 신경망"
+    },
+    {
+     "id": "3.d",
+     "title": "알고리즘 선택",
+     "titleKo": "알고리즘 선택"
+    }
+   ]
+  },
+  {
+   "id": "R4",
+   "readingNumber": 4,
+   "title": "Big Data Projects",
+   "titleKo": "빅데이터 프로젝트",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R4 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "4.a",
+     "title": "빅데이터 분석 프로세스",
+     "titleKo": "빅데이터 분석 프로세스"
+    },
+    {
+     "id": "4.b",
+     "title": "데이터 준비와 정제",
+     "titleKo": "데이터 준비와 정제"
+    },
+    {
+     "id": "4.c",
+     "title": "텍스트 데이터 처리",
+     "titleKo": "텍스트 데이터 처리"
+    },
+    {
+     "id": "4.d",
+     "title": "모델 훈련 · 평가 지표",
+     "titleKo": "모델 훈련 · 평가 지표"
+    }
+   ]
+  },
+  {
+   "id": "R5",
+   "readingNumber": 5,
+   "title": "Currency Exchange Rates",
+   "titleKo": "환율: 균형가치의 이해",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R5 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "5.a",
+     "title": "호가 · 스프레드 · 교차환율과 차익거래",
+     "titleKo": "호가 · 스프레드 · 교차환율과 차익거래"
+    },
+    {
+     "id": "5.b",
+     "title": "포워드 계산과 마크투마켓",
+     "titleKo": "포워드 계산과 마크투마켓"
+    },
+    {
+     "id": "5.c",
+     "title": "국제 패리티: CIP · UIP · PPP · Fisher",
+     "titleKo": "국제 패리티: CIP · UIP · PPP · Fisher"
+    },
+    {
+     "id": "5.d",
+     "title": "캐리 트레이드",
+     "titleKo": "캐리 트레이드"
+    },
+    {
+     "id": "5.e",
+     "title": "BOP · 통화 · 재정정책과 환율",
+     "titleKo": "BOP · 통화 · 재정정책과 환율"
+    },
+    {
+     "id": "5.f",
+     "title": "환율 예측과 개입 · 위기 신호",
+     "titleKo": "환율 예측과 개입 · 위기 신호"
+    }
+   ]
+  },
+  {
+   "id": "R6",
+   "readingNumber": 6,
+   "title": "Economic Growth",
+   "titleKo": "경제성장",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R6 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "6.a",
+     "title": "성장의 원천과 성장회계",
+     "titleKo": "성장의 원천과 성장회계"
+    },
+    {
+     "id": "6.b",
+     "title": "자본 심화 vs 기술진보",
+     "titleKo": "자본 심화 vs 기술진보"
+    },
+    {
+     "id": "6.c",
+     "title": "고전파 · 신고전파 · 내생성장이론",
+     "titleKo": "고전파 · 신고전파 · 내생성장이론"
+    },
+    {
+     "id": "6.d",
+     "title": "수렴 가설",
+     "titleKo": "수렴 가설"
+    },
+    {
+     "id": "6.e",
+     "title": "성장과 주식시장 수익",
+     "titleKo": "성장과 주식시장 수익"
+    }
+   ]
+  }
+ ]
+}

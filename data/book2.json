@@ -1,0 +1,260 @@
+{
+ "bookId": "BOOK2",
+ "shortTitle": "FSA · Corporate Issuers",
+ "title": "BOOK2 | Financial Statement Analysis and Corporate Issuers",
+ "tabColor": "#3E7C5B",
+ "sourceFile": "2026 Level II Schweser 2.pdf",
+ "version": "v4-textbook",
+ "readings": [
+  {
+   "id": "R7",
+   "readingNumber": 7,
+   "title": "Intercorporate Investments",
+   "titleKo": "기업간 투자",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R7 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "7.a",
+     "title": "금융자산 · 관계기업 · 사업결합의 분류와 회계",
+     "titleKo": "금융자산 · 관계기업 · 사업결합의 분류와 회계"
+    },
+    {
+     "id": "7.b",
+     "title": "지분법 vs 연결 vs FVPL/FVOCI",
+     "titleKo": "지분법 vs 연결 vs FVPL/FVOCI"
+    },
+    {
+     "id": "7.c",
+     "title": "비율 영향 비교",
+     "titleKo": "비율 영향 비교"
+    }
+   ]
+  },
+  {
+   "id": "R8",
+   "readingNumber": 8,
+   "title": "Employee Compensation: Post-Employment and Share-Based",
+   "titleKo": "종업원 보상: 퇴직급여 · 주식보상",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R8 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "8.a",
+     "title": "DB · DC 회계와 재무제표 영향",
+     "titleKo": "DB · DC 회계와 재무제표 영향"
+    },
+    {
+     "id": "8.b",
+     "title": "연금 가정의 조정과 분석",
+     "titleKo": "연금 가정의 조정과 분석"
+    },
+    {
+     "id": "8.c",
+     "title": "주식기준보상",
+     "titleKo": "주식기준보상"
+    }
+   ]
+  },
+  {
+   "id": "R9",
+   "readingNumber": 9,
+   "title": "Multinational Operations",
+   "titleKo": "다국적 영업 (환산회계)",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R9 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "9.a",
+     "title": "현행환율법 vs 시제법",
+     "titleKo": "현행환율법 vs 시제법"
+    },
+    {
+     "id": "9.b",
+     "title": "기능통화 판단",
+     "titleKo": "기능통화 판단"
+    },
+    {
+     "id": "9.c",
+     "title": "초인플레이션",
+     "titleKo": "초인플레이션"
+    },
+    {
+     "id": "9.d",
+     "title": "비율 영향과 분석",
+     "titleKo": "비율 영향과 분석"
+    }
+   ]
+  },
+  {
+   "id": "R10",
+   "readingNumber": 10,
+   "title": "Analysis of Financial Institutions",
+   "titleKo": "금융기관 분석",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R10 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "10.a",
+     "title": "은행 분석: CAMELS",
+     "titleKo": "은행 분석: CAMELS"
+    },
+    {
+     "id": "10.b",
+     "title": "보험사 분석: P&C · 생보",
+     "titleKo": "보험사 분석: P&C · 생보"
+    }
+   ]
+  },
+  {
+   "id": "R11",
+   "readingNumber": 11,
+   "title": "Evaluating Quality of Financial Reports",
+   "titleKo": "재무보고의 질 평가",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R11 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "11.a",
+     "title": "보고 품질의 스펙트럼",
+     "titleKo": "보고 품질의 스펙트럼"
+    },
+    {
+     "id": "11.b",
+     "title": "조작 동기와 수단",
+     "titleKo": "조작 동기와 수단"
+    },
+    {
+     "id": "11.c",
+     "title": "Beneish · 품질 평가 도구",
+     "titleKo": "Beneish · 품질 평가 도구"
+    },
+    {
+     "id": "11.d",
+     "title": "이익 · 현금흐름 · 대차대조표 품질",
+     "titleKo": "이익 · 현금흐름 · 대차대조표 품질"
+    }
+   ]
+  },
+  {
+   "id": "R12",
+   "readingNumber": 12,
+   "title": "Integration of FSA Techniques",
+   "titleKo": "재무분석 기법의 통합",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R12 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "12.a",
+     "title": "통합 분석 프레임워크와 케이스 적용",
+     "titleKo": "통합 분석 프레임워크와 케이스 적용"
+    }
+   ]
+  },
+  {
+   "id": "R13",
+   "readingNumber": 13,
+   "title": "Analysis of Dividends and Share Repurchases",
+   "titleKo": "배당 · 자사주 분석",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R13 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "13.a",
+     "title": "배당 이론: MM · bird-in-hand · 세금",
+     "titleKo": "배당 이론: MM · bird-in-hand · 세금"
+    },
+    {
+     "id": "13.b",
+     "title": "신호효과와 대리인 문제",
+     "titleKo": "신호효과와 대리인 문제"
+    },
+    {
+     "id": "13.c",
+     "title": "배당정책 유형",
+     "titleKo": "배당정책 유형"
+    },
+    {
+     "id": "13.d",
+     "title": "자사주 매입의 EPS · BV 효과",
+     "titleKo": "자사주 매입의 EPS · BV 효과"
+    },
+    {
+     "id": "13.e",
+     "title": "배당 안전성 분석",
+     "titleKo": "배당 안전성 분석"
+    }
+   ]
+  },
+  {
+   "id": "R14",
+   "readingNumber": 14,
+   "title": "ESG Considerations",
+   "titleKo": "ESG 통합 분석",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R14 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "14.a",
+     "title": "지배구조 · 소유구조 분석",
+     "titleKo": "지배구조 · 소유구조 분석"
+    },
+    {
+     "id": "14.b",
+     "title": "ESG 요소의 밸류에이션 반영",
+     "titleKo": "ESG 요소의 밸류에이션 반영"
+    }
+   ]
+  },
+  {
+   "id": "R15",
+   "readingNumber": 15,
+   "title": "Cost of Capital: Advanced Topics",
+   "titleKo": "자본비용 심화",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R15 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "15.a",
+     "title": "자본비용 요인",
+     "titleKo": "자본비용 요인"
+    },
+    {
+     "id": "15.b",
+     "title": "ERP 추정 접근",
+     "titleKo": "ERP 추정 접근"
+    },
+    {
+     "id": "15.c",
+     "title": "자기자본비용 모델과 국제 확장",
+     "titleKo": "자기자본비용 모델과 국제 확장"
+    }
+   ]
+  },
+  {
+   "id": "R16",
+   "readingNumber": 16,
+   "title": "Corporate Restructuring",
+   "titleKo": "기업 구조조정",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R16 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "16.a",
+     "title": "구조조정 유형과 동기",
+     "titleKo": "구조조정 유형과 동기"
+    },
+    {
+     "id": "16.b",
+     "title": "평가 · 분석 프레임워크",
+     "titleKo": "평가 · 분석 프레임워크"
+    },
+    {
+     "id": "16.c",
+     "title": "M&A · 분할 · 비용 구조조정 사례",
+     "titleKo": "M&A · 분할 · 비용 구조조정 사례"
+    }
+   ]
+  }
+ ]
+}

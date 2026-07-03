@@ -1,0 +1,310 @@
+{
+ "bookId": "BOOK4",
+ "shortTitle": "FI · Derivatives · Alts",
+ "title": "BOOK4 | Fixed Income, Derivatives, and Alternative Investments",
+ "tabColor": "#B07A2A",
+ "sourceFile": "CFA 2026 Level II SchweserNotes Book 4.pdf",
+ "version": "v4-textbook",
+ "readings": [
+  {
+   "id": "R23",
+   "readingNumber": 23,
+   "title": "The Term Structure and Interest Rate Dynamics",
+   "titleKo": "기간구조와 금리 동학",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R23 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "23.a",
+     "title": "spot · forward · par rate와 상호 도출",
+     "titleKo": "spot · forward · par rate와 상호 도출"
+    },
+    {
+     "id": "23.b",
+     "title": "forward pricing · rate 모델",
+     "titleKo": "forward pricing · rate 모델"
+    },
+    {
+     "id": "23.c",
+     "title": "YTM의 한계와 롤다운 전략",
+     "titleKo": "YTM의 한계와 롤다운 전략"
+    },
+    {
+     "id": "23.d",
+     "title": "swap curve · spread 지표",
+     "titleKo": "swap curve · spread 지표"
+    },
+    {
+     "id": "23.e",
+     "title": "기간구조 이론",
+     "titleKo": "기간구조 이론"
+    },
+    {
+     "id": "23.f",
+     "title": "수익률곡선 리스크와 변동성",
+     "titleKo": "수익률곡선 리스크와 변동성"
+    }
+   ]
+  },
+  {
+   "id": "R24",
+   "readingNumber": 24,
+   "title": "The Arbitrage-Free Valuation Framework",
+   "titleKo": "무차익 평가 프레임워크",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R24 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "24.a",
+     "title": "무차익 평가의 의미",
+     "titleKo": "무차익 평가의 의미"
+    },
+    {
+     "id": "24.b",
+     "title": "이항 금리트리와 backward induction",
+     "titleKo": "이항 금리트리와 backward induction"
+    },
+    {
+     "id": "24.c",
+     "title": "트리 캘리브레이션",
+     "titleKo": "트리 캘리브레이션"
+    },
+    {
+     "id": "24.d",
+     "title": "pathwise valuation · Monte Carlo",
+     "titleKo": "pathwise valuation · Monte Carlo"
+    }
+   ]
+  },
+  {
+   "id": "R25",
+   "readingNumber": 25,
+   "title": "Bonds With Embedded Options",
+   "titleKo": "내재옵션부 채권",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R25 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "25.a",
+     "title": "callable · putable 구조",
+     "titleKo": "callable · putable 구조"
+    },
+    {
+     "id": "25.b",
+     "title": "트리 기반 평가",
+     "titleKo": "트리 기반 평가"
+    },
+    {
+     "id": "25.c",
+     "title": "OAS",
+     "titleKo": "OAS"
+    },
+    {
+     "id": "25.d",
+     "title": "effective duration · convexity",
+     "titleKo": "effective duration · convexity"
+    },
+    {
+     "id": "25.e",
+     "title": "전환사채",
+     "titleKo": "전환사채"
+    }
+   ]
+  },
+  {
+   "id": "R26",
+   "readingNumber": 26,
+   "title": "Credit Analysis Models",
+   "titleKo": "신용분석 모델",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R26 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "26.a",
+     "title": "expected exposure · LGD · PD · credit spread",
+     "titleKo": "expected exposure · LGD · PD · credit spread"
+    },
+    {
+     "id": "26.b",
+     "title": "credit scoring · structural · reduced form",
+     "titleKo": "credit scoring · structural · reduced form"
+    },
+    {
+     "id": "26.c",
+     "title": "CVA와 신용스프레드 기간구조",
+     "titleKo": "CVA와 신용스프레드 기간구조"
+    }
+   ]
+  },
+  {
+   "id": "R27",
+   "readingNumber": 27,
+   "title": "Credit Default Swaps",
+   "titleKo": "CDS",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R27 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "27.a",
+     "title": "CDS 구조와 신용사건",
+     "titleKo": "CDS 구조와 신용사건"
+    },
+    {
+     "id": "27.b",
+     "title": "프리미엄 · 업프론트 계산",
+     "titleKo": "프리미엄 · 업프론트 계산"
+    },
+    {
+     "id": "27.c",
+     "title": "CDS 전략과 베이시스",
+     "titleKo": "CDS 전략과 베이시스"
+    }
+   ]
+  },
+  {
+   "id": "R28",
+   "readingNumber": 28,
+   "title": "Pricing and Valuation of Forward Commitments",
+   "titleKo": "선도확약의 가격결정",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R28 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "28.a",
+     "title": "선도 · 선물 가격과 가치",
+     "titleKo": "선도 · 선물 가격과 가치"
+    },
+    {
+     "id": "28.b",
+     "title": "FRA",
+     "titleKo": "FRA"
+    },
+    {
+     "id": "28.c",
+     "title": "금리 · 통화 · 주식 스왑",
+     "titleKo": "금리 · 통화 · 주식 스왑"
+    }
+   ]
+  },
+  {
+   "id": "R29",
+   "readingNumber": 29,
+   "title": "Valuation of Contingent Claims",
+   "titleKo": "조건부청구권 평가",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R29 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "29.a",
+     "title": "이항 옵션 평가와 헤지비율",
+     "titleKo": "이항 옵션 평가와 헤지비율"
+    },
+    {
+     "id": "29.b",
+     "title": "BSM 모델과 가정",
+     "titleKo": "BSM 모델과 가정"
+    },
+    {
+     "id": "29.c",
+     "title": "Greeks와 델타헤징",
+     "titleKo": "Greeks와 델타헤징"
+    },
+    {
+     "id": "29.d",
+     "title": "implied volatility",
+     "titleKo": "implied volatility"
+    }
+   ]
+  },
+  {
+   "id": "R30",
+   "readingNumber": 30,
+   "title": "Commodities and Commodity Derivatives",
+   "titleKo": "원자재와 원자재 파생",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R30 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "30.a",
+     "title": "원자재 섹터별 특성",
+     "titleKo": "원자재 섹터별 특성"
+    },
+    {
+     "id": "30.b",
+     "title": "선물 수익 원천과 콘탱고 · 백워데이션",
+     "titleKo": "선물 수익 원천과 콘탱고 · 백워데이션"
+    },
+    {
+     "id": "30.c",
+     "title": "원자재 지수",
+     "titleKo": "원자재 지수"
+    }
+   ]
+  },
+  {
+   "id": "R31",
+   "readingNumber": 31,
+   "title": "Overview of Types of Real Estate Investment",
+   "titleKo": "부동산 투자 유형",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R31 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "31.a",
+     "title": "부동산 투자 형태와 특성",
+     "titleKo": "부동산 투자 형태와 특성"
+    },
+    {
+     "id": "31.b",
+     "title": "평가 접근: income · cost · sales comparison",
+     "titleKo": "평가 접근: income · cost · sales comparison"
+    }
+   ]
+  },
+  {
+   "id": "R32",
+   "readingNumber": 32,
+   "title": "Real Estate Through Publicly Traded Securities",
+   "titleKo": "상장 부동산 (REITs)",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R32 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "32.a",
+     "title": "REIT 구조와 유형",
+     "titleKo": "REIT 구조와 유형"
+    },
+    {
+     "id": "32.b",
+     "title": "FFO · AFFO · NAV 기반 평가",
+     "titleKo": "FFO · AFFO · NAV 기반 평가"
+    }
+   ]
+  },
+  {
+   "id": "R33",
+   "readingNumber": 33,
+   "title": "Hedge Fund Strategies",
+   "titleKo": "헤지펀드 전략",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R33 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "33.a",
+     "title": "전략 분류: equity · event-driven · relative value · macro",
+     "titleKo": "전략 분류: equity · event-driven · relative value · macro"
+    },
+    {
+     "id": "33.b",
+     "title": "멀티전략 · 펀드오브펀드",
+     "titleKo": "멀티전략 · 펀드오브펀드"
+    },
+    {
+     "id": "33.c",
+     "title": "조건부 리스크 요인 분석",
+     "titleKo": "조건부 리스크 요인 분석"
+    }
+   ]
+  }
+ ]
+}

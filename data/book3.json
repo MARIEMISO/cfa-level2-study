@@ -1,0 +1,1520 @@
+{
+ "bookId": "BOOK3",
+ "shortTitle": "Equity Valuation",
+ "title": "BOOK3 | Equity Valuation",
+ "tabColor": "#A63D40",
+ "sourceFile": "2026 Level II Schweser 3.pdf",
+ "version": "v4-textbook",
+ "readings": [
+  {
+   "id": "R17",
+   "readingNumber": 17,
+   "title": "Equity Valuation: Applications and Processes",
+   "titleKo": "Equity Valuation: 적용과 프로세스",
+   "status": "detailed",
+   "losItems": [
+    {
+     "id": "17.a",
+     "title": "Valuation, intrinsic value, perceived mispricing",
+     "titleKo": "Valuation과 내재가치, 그리고 perceived mispricing",
+     "losEn": "define valuation and intrinsic value and explain sources of perceived mispricing",
+     "keywords": [
+      "valuation",
+      "intrinsic value",
+      "내재가치",
+      "mispricing",
+      "perceived mispricing",
+      "valuation error",
+      "actual mispricing",
+      "IV",
+      "V-P"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "Valuation은 market price와 intrinsic value를 비교해 mispricing을 찾는 과정이고, 내가 인식한 mispricing에는 ==시장의 오류==와 ==나의 추정 오류==가 섞여 있다."
+      },
+      {
+       "type": "h",
+       "text": "Intuition: 좋은 회사 찾기가 아니라 가격과 가치 비교"
+      },
+      {
+       "type": "p",
+       "text": "주식투자에서 제일 중요한 질문은 **이 회사 좋은 회사야?** 가 아니라 **이 회사가 현재 가격 대비 좋은 투자야?** 야. 좋은 회사라도 너무 비싸면 나쁜 투자가 될 수 있고, 평범한 회사라도 충분히 싸면 좋은 투자가 될 수 있어. Valuation은 기업을 좋아하는 작업이 아니라 가치와 가격의 차이를 냉정하게 재는 작업이야."
+      },
+      {
+       "type": "table",
+       "head": [
+        "항목",
+        "값",
+        "해석"
+       ],
+       "rows": [
+        [
+         "Market price (P)",
+         "80",
+         "시장에서 실제 거래되는 가격. 유일하게 관찰 가능한 숫자"
+        ],
+        [
+         "Analyst estimate (V(E))",
+         "100",
+         "내 모델과 가정으로 계산한 내재가치 추정치"
+        ],
+        [
+         "판단",
+         "Undervalued 가능",
+         "단, 내 추정이 맞다는 전제하에서만"
+        ]
+       ]
+      },
+      {
+       "type": "h",
+       "text": "Technical: 정의 3개를 정확히 구분"
+      },
+      {
+       "type": "list",
+       "items": [
+        "**Valuation** — 자산의 가치를 추정하는 과정. 모델을 세우고 입력값을 추정해 가치를 계산하는 전 과정",
+        "**Intrinsic value (V)** — 자산과 발행기업의 특성을 **완전히 이해한 사람**이 매기는 가치. 시장이 정보적으로 완전 효율적이지 않다면 market price와 다를 수 있음",
+        "**Analyst estimate of IV (V(E))** — analyst가 모델로 계산한 내재가치 추정치. 진짜 V가 아니라 V의 근사치"
+       ]
+      },
+      {
+       "type": "p",
+       "text": "핵심은 intrinsic value 자체도 관찰 불가능하다는 점이야. HTS에 보이는 건 P뿐이고 V는 아무도 몰라. 우리가 만드는 건 언제나 V(E), 즉 추정치야. 그래서 CFA는 굳이 **perceived** mispricing이라는 단어를 써."
+      },
+      {
+       "type": "h",
+       "text": "공식: perceived mispricing의 분해"
+      },
+      {
+       "type": "formula",
+       "latex": "\\underbrace{V_E - P}_{\\text{perceived mispricing}} \\;=\\; \\underbrace{(V - P)}_{\\text{actual mispricing}} \\;+\\; \\underbrace{(V_E - V)}_{\\text{valuation error}}",
+       "caption": "V(E) = analyst의 내재가치 추정치, V = 진짜 내재가치, P = market price. 내가 보는 괴리(V(E)−P)는 시장이 틀린 부분(V−P)과 내가 틀린 부분(V(E)−V)의 합이다."
+      },
+      {
+       "type": "svg",
+       "code": "<svg viewBox=\"0 0 720 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Pretendard, sans-serif\">\n<defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n<path d=\"M0,0 L6,3 L0,6 z\" fill=\"#6B7078\"/></marker></defs>\n<text x=\"360\" y=\"26\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#2A2D34\">Perceived mispricing의 분해</text>\n\n<rect x=\"30\" y=\"55\" width=\"200\" height=\"64\" rx=\"10\" fill=\"#A63D40\"/>\n<text x=\"130\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#fff\">V(E) − P</text>\n<text x=\"130\" y=\"102\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#fff\">내가 인식한 mispricing</text>\n\n<text x=\"255\" y=\"94\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"700\" fill=\"#2A2D34\">=</text>\n\n<rect x=\"280\" y=\"55\" width=\"190\" height=\"64\" rx=\"10\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"2\"/>\n<text x=\"375\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#A63D40\">V − P</text>\n<text x=\"375\" y=\"102\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">actual mispricing · 시장의 오류</text>\n\n<text x=\"492\" y=\"94\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"700\" fill=\"#2A2D34\">+</text>\n\n<rect x=\"512\" y=\"55\" width=\"185\" height=\"64\" rx=\"10\" fill=\"#fff\" stroke=\"#6B7078\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<text x=\"604\" y=\"82\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#2A2D34\">V(E) − V</text>\n<text x=\"604\" y=\"102\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">valuation error · 나의 오류</text>\n\n<line x1=\"60\" y1=\"190\" x2=\"660\" y2=\"190\" stroke=\"#2A2D34\" stroke-width=\"1.6\"/>\n<line x1=\"120\" y1=\"182\" x2=\"120\" y2=\"198\" stroke=\"#2A2D34\" stroke-width=\"1.6\"/>\n<line x1=\"420\" y1=\"182\" x2=\"420\" y2=\"198\" stroke=\"#2A2D34\" stroke-width=\"1.6\"/>\n<line x1=\"600\" y1=\"182\" x2=\"600\" y2=\"198\" stroke=\"#2A2D34\" stroke-width=\"1.6\"/>\n<text x=\"120\" y=\"218\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2A2D34\">P = 80</text>\n<text x=\"120\" y=\"235\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">market price</text>\n<text x=\"420\" y=\"218\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#A63D40\">V = 95</text>\n<text x=\"420\" y=\"235\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">진짜 내재가치 (관찰 불가)</text>\n<text x=\"600\" y=\"218\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2A2D34\">V(E) = 100</text>\n<text x=\"600\" y=\"235\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">내 추정치</text>\n<path d=\"M130 258 Q 270 285 405 262\" fill=\"none\" stroke=\"#A63D40\" stroke-width=\"1.6\" marker-end=\"url(#ar)\"/>\n<text x=\"268\" y=\"292\" text-anchor=\"middle\" font-size=\"11\" fill=\"#A63D40\">actual mispricing 15</text>\n<path d=\"M432 258 Q 510 280 590 262\" fill=\"none\" stroke=\"#6B7078\" stroke-width=\"1.6\" stroke-dasharray=\"4 4\" marker-end=\"url(#ar)\"/>\n<text x=\"512\" y=\"292\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">valuation error 5</text>\n</svg>",
+       "caption": "예: P=80, 진짜 V=95, 내 추정 V(E)=100이면 내가 인식한 20의 괴리 중 15만 진짜 mispricing이고 5는 내 오류다."
+      },
+      {
+       "type": "h",
+       "text": "왜 시장가격이 가치에서 벗어날까 (mispricing의 원천)"
+      },
+      {
+       "type": "table",
+       "head": [
+        "원인",
+        "설명"
+       ],
+       "rows": [
+        [
+         "정보 차이",
+         "일부 투자자가 더 좋은 정보 또는 더 나은 해석력을 가짐"
+        ],
+        [
+         "가정 차이",
+         "성장률 · margin · discount rate · terminal growth 가정이 analyst마다 다름"
+        ],
+        [
+         "시장 심리",
+         "과도한 낙관/공포, 테마 과열, 단기 뉴스 과잉반응"
+        ],
+        [
+         "유동성 · 수급",
+         "거래량 부족, 펀드 환매, 패시브 리밸런싱, 로스컷 물량"
+        ],
+        [
+         "회계정보의 질",
+         "earnings quality가 낮으면 가치 판단 자체가 어려움"
+        ],
+        [
+         "복잡한 사업구조",
+         "SOTP가 필요한 회사를 시장이 단일 multiple로 평가"
+        ]
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "V(E) − P = (V − P) + (V(E) − V) 분해는 그대로 출제된다. \"analyst 추정치와 가격의 괴리를 설명하는 요인으로 **가장 거리가 먼 것**\"을 고르는 유형이 전형적이야.",
+        "괴리의 원인은 딱 2개: **시장의 오류(actual mispricing)** 와 **나의 오류(valuation error)**. going concern value 같은 무관한 개념이 오답 보기로 나온다."
+       ]
+      },
+      {
+       "type": "h",
+       "text": "헷갈리는 비교"
+      },
+      {
+       "type": "table",
+       "head": [
+        "개념",
+        "의미",
+        "관찰 가능?"
+       ],
+       "rows": [
+        [
+         "Market price (P)",
+         "실제 거래 가격",
+         "O"
+        ],
+        [
+         "Intrinsic value (V)",
+         "fundamentals 기반 진짜 가치",
+         "X (아무도 모름)"
+        ],
+        [
+         "Analyst estimate (V(E))",
+         "내가 계산한 V의 추정치",
+         "내 모델 안에서만"
+        ],
+        [
+         "Target price",
+         "일정 기간 후 예상 주가 (수익률 목표 포함)",
+         "X"
+        ]
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "trap",
+       "text": [
+        "**Trap 1** — 좋은 회사 = 좋은 투자? 아니야. P가 V보다 높으면 좋은 회사도 나쁜 투자야.",
+        "**Trap 2** — 낮은 P/E = 무조건 undervalued? 아니야. 낮은 성장률, 낮은 ROE, 높은 리스크, 낮은 earnings quality 때문일 수 있어.",
+        "**Trap 3** — V(E) > P니까 시장이 틀렸다? 아니야. 내 valuation error일 수 있어. 그래서 perceived mispricing이야.",
+        "**Trap 4** — 주가가 많이 빠졌으니 싸다? 아니야. V가 더 크게 빠졌으면 여전히 비싸."
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "tip",
+       "title": "실무 연결",
+       "text": "IPO 공모가 분석이 정확히 이 작업이야. 공모가(P)가 peer 대비 비싼지, 성장 가정을 넣으면 정당화되는지 보는 것 자체가 V(E)를 만들어 P와 비교하는 일. 리서치 리포트의 target price 산정, 운용에서의 overweight/underweight 판단도 전부 같은 구조다."
+      },
+      {
+       "type": "example",
+       "title": "perceived mispricing 분해 계산",
+       "setup": "analyst 미나는 A사의 내재가치를 52,000원으로 추정했다. 현재 주가는 44,000원이다. 사후적으로 밝혀진 진짜 내재가치가 47,000원이었다면 actual mispricing과 valuation error는 각각 얼마였나?",
+       "answer": [
+        "perceived mispricing = V(E) − P = 52,000 − 44,000 = **8,000원**",
+        "actual mispricing = V − P = 47,000 − 44,000 = **3,000원** (시장이 실제로 싸게 매긴 부분)",
+        "valuation error = V(E) − V = 52,000 − 47,000 = **5,000원** (미나가 과대추정한 부분)",
+        "검산: 3,000 + 5,000 = 8,000 ✓. 미나가 인식한 저평가 8,000원 중 실제 기회는 3,000원뿐이었다."
+       ]
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.a",
+       "items": [
+        {
+         "q": "Market price가 80이고 analyst의 intrinsic value estimate가 100이면 analyst 관점에서 이 주식은?",
+         "choices": [
+          "A. Overvalued",
+          "B. Fairly valued",
+          "C. Undervalued"
+         ],
+         "answer": "C",
+         "explain": "V(E) 100 > P 80이므로 analyst 관점에서 undervalued. 단, 이는 perceived mispricing이며 valuation error 가능성을 항상 함께 고려해야 한다."
+        },
+        {
+         "q": "CFA에서 단순히 mispricing이 아니라 perceived mispricing이라고 부르는 이유는?",
+         "answer": "analyst가 인식한 괴리에는 시장의 오류(actual mispricing)뿐 아니라 analyst 자신의 추정 오류(valuation error)가 섞여 있을 수 있기 때문",
+         "explain": "진짜 V는 관찰 불가능하므로 V(E) − P가 전부 시장의 잘못이라고 단정할 수 없다."
+        },
+        {
+         "q": "analyst의 추정치와 시장가격이 다른 이유를 설명하는 요인으로 가장 거리가 먼 것은? (A) 진짜 내재가치와 시장가격의 차이 (B) analyst 추정치와 진짜 내재가치의 차이 (C) 내재가치와 going concern value의 차이",
+         "answer": "C",
+         "explain": "분해식의 두 항은 actual mispricing(V−P)과 valuation error(V(E)−V)뿐이다. going concern은 17.b의 별개 개념."
+        },
+        {
+         "q": "좋은 회사인데도 나쁜 투자가 될 수 있는 이유를 한 문장으로 설명하면?",
+         "answer": "아무리 우량한 기업이라도 market price가 intrinsic value를 초과하면(P > V) 기대수익률이 요구수익률에 못 미치기 때문",
+         "explain": "valuation의 대상은 회사의 품질이 아니라 가격 대비 가치다."
+        },
+        {
+         "q": "A기업 P/E 5배, 업계 평균 15배. 이것만으로 undervalued라고 결론 내리면 위험한 이유 2가지는?",
+         "answer": "(1) 낮은 P/E가 낮은 성장률 · 낮은 ROE · 높은 리스크 · 낮은 earnings quality를 반영한 정당한 가격일 수 있음 (2) relative valuation은 peer 대비 상대적 판단일 뿐, peer 전체가 고평가면 절대적으로는 여전히 비쌀 수 있음",
+         "explain": "multiple 비교는 fundamentals 차이를 통제해야 의미가 있다. R20에서 justified multiple로 다시 다룬다."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.b",
+     "title": "Going concern vs liquidation value",
+     "titleKo": "Going concern 가정과 청산가치의 대비",
+     "losEn": "explain the going concern assumption and contrast a going concern value to a liquidation value",
+     "keywords": [
+      "going concern",
+      "계속기업",
+      "liquidation value",
+      "청산가치",
+      "orderly liquidation",
+      "급매"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "**Going concern**은 회사가 계속 영업한다는 가정이고, 그 가정이 깨지면 모델 대신 ==자산을 따로 팔아 부채를 갚고 남는 청산가치==로 평가한다."
+      },
+      {
+       "type": "h",
+       "text": "Intuition: 살아있는 가게 vs 문 닫는 가게"
+      },
+      {
+       "type": "p",
+       "text": "장사가 잘되는 식당의 가치는 주방기구 중고가의 합이 아니야. 브랜드, 단골, 레시피, 입지가 만들어내는 **미래 현금흐름**이 가치의 본체지. 이게 going concern value야. 반대로 폐업이 확정된 식당이라면 미래 현금흐름은 없고, 냉장고와 테이블을 중고로 팔아 임대보증금 정산하고 남는 돈이 가치의 전부야. 이게 liquidation value."
+      },
+      {
+       "type": "h",
+       "text": "Technical: 세 가지 정의"
+      },
+      {
+       "type": "list",
+       "items": [
+        "**Going concern assumption** — 회사가 폐업하지 않고 사업을 계속한다는 가정. Level II의 DDM, FCF, RI, multiples 모델은 전부 이 가정 위에 서 있다",
+        "**Liquidation value** — 회사가 존속할 수 없을 때, 자산을 **개별적으로** 팔아 얻는 금액에서 부채를 차감한 잔여가치",
+        "**Orderly liquidation value** — 급매가 아니라 **시간을 두고** 자산을 팔 때의 청산가치. 더 좋은 값을 받을 수 있어 일반 청산가치보다 높다"
+       ]
+      },
+      {
+       "type": "svg",
+       "code": "<svg viewBox=\"0 0 720 320\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Pretendard, sans-serif\">\n<defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n<path d=\"M0,0 L6,3 L0,6 z\" fill=\"#6B7078\"/></marker></defs>\n<rect x=\"235\" y=\"20\" width=\"250\" height=\"58\" rx=\"12\" fill=\"#2A2D34\"/>\n<text x=\"360\" y=\"45\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">이 회사, 계속 영업할 수 있나?</text>\n<text x=\"360\" y=\"64\" text-anchor=\"middle\" font-size=\"11\" fill=\"#ccc\">going concern 가정의 성립 여부</text>\n\n<line x1=\"290\" y1=\"78\" x2=\"175\" y2=\"120\" stroke=\"#6B7078\" stroke-width=\"1.6\" marker-end=\"url(#ar2)\"/>\n<text x=\"205\" y=\"95\" font-size=\"12\" font-weight=\"700\" fill=\"#3E7C5B\">YES</text>\n<line x1=\"430\" y1=\"78\" x2=\"545\" y2=\"120\" stroke=\"#6B7078\" stroke-width=\"1.6\" marker-end=\"url(#ar2)\"/>\n<text x=\"500\" y=\"95\" font-size=\"12\" font-weight=\"700\" fill=\"#A63D40\">NO</text>\n\n<rect x=\"40\" y=\"125\" width=\"280\" height=\"120\" rx=\"12\" fill=\"#fff\" stroke=\"#3E7C5B\" stroke-width=\"2\"/>\n<text x=\"180\" y=\"152\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#3E7C5B\">Going concern value</text>\n<text x=\"180\" y=\"176\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#2A2D34\">계속기업 가정하의 가치</text>\n<text x=\"180\" y=\"200\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">DDM · FCFF/FCFE · Residual income</text>\n<text x=\"180\" y=\"220\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">multiples 등 대부분의 모델이 여기 속함</text>\n\n<rect x=\"400\" y=\"125\" width=\"280\" height=\"120\" rx=\"12\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"2\"/>\n<text x=\"540\" y=\"152\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#A63D40\">Liquidation value</text>\n<text x=\"540\" y=\"176\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#2A2D34\">자산을 따로 팔아 부채 갚고 남는 가치</text>\n<text x=\"540\" y=\"200\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">급매 성격 · 무형자산 가치 대부분 소멸</text>\n<text x=\"540\" y=\"220\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">시간 두고 팔면 orderly liquidation value ↑</text>\n\n<text x=\"360\" y=\"290\" text-anchor=\"middle\" font-size=\"12\" fill=\"#6B7078\">Level II에서 배우는 valuation 모델은 전부 going concern 가정 위에 서 있다</text>\n</svg>",
+       "caption": "going concern 성립 여부에 따른 가치 개념 분기"
+      },
+      {
+       "type": "h",
+       "text": "왜 두 가치가 크게 다를까"
+      },
+      {
+       "type": "p",
+       "text": "going concern value에는 자산의 **결합 가치**가 들어가. 조직, 브랜드, 고객관계, 노하우 같은 무형의 요소는 사업이 돌아갈 때만 가치가 있고 자산을 쪼개 파는 순간 대부분 증발해. 그래서 정상 기업은 보통 going concern value가 liquidation value보다 훨씬 커."
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "\"going concern 가정이 유효하지 않은 회사에 가장 적절한 평가법은?\" → **liquidation value**. DDM · RI 같은 보기가 오답으로 깔린다.",
+        "역방향 함정도 있어. ==만성 적자로 계속 가치를 파괴하는 기업은 liquidation value가 going concern value보다 클 수 있다==. 이때는 청산이 주주에게 더 유리하다."
+       ]
+      },
+      {
+       "type": "h",
+       "text": "헷갈리는 비교"
+      },
+      {
+       "type": "table",
+       "head": [
+        "구분",
+        "Going concern value",
+        "Liquidation value"
+       ],
+       "rows": [
+        [
+         "전제",
+         "사업 계속",
+         "사업 중단 · 해산"
+        ],
+        [
+         "가치 원천",
+         "미래 현금흐름 + 자산의 결합/시너지",
+         "개별 자산의 처분가액 − 부채"
+        ],
+        [
+         "무형자산",
+         "브랜드 · 고객 · 노하우 반영",
+         "대부분 소멸"
+        ],
+        [
+         "사용 모델",
+         "DDM · FCF · RI · multiples",
+         "자산별 처분가 추정"
+        ],
+        [
+         "일반적 크기",
+         "정상 기업이면 더 큼",
+         "부실기업에선 더 클 수 있음"
+        ]
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "tip",
+       "title": "실무 연결",
+       "text": "회생절차 기업의 채권 분석이 정확히 이 프레임이야. 회생계획 인가로 사업이 계속되면 going concern 기준 변제율, 청산 시나리오면 liquidation 기준 변제율을 따로 계산해 비교한다. 법원이 회생 인가 여부를 판단하는 기준 자체가 '계속기업가치 > 청산가치'인지다."
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.b",
+       "items": [
+        {
+         "q": "going concern 가정이 유효하지 않은 회사에 가장 적절한 평가 방법은? (A) residual income model (B) dividend discount model (C) liquidation value",
+         "answer": "C",
+         "explain": "DDM과 RI는 모두 계속기업 가정 위의 모델이다. 존속이 어려우면 청산가치로 평가한다."
+        },
+        {
+         "q": "orderly liquidation value가 일반 liquidation value보다 큰 이유는?",
+         "answer": "자산을 급매하지 않고 시간을 두고 매각하면 더 좋은 가격을 받을 수 있기 때문",
+         "explain": "파는 데 쓸 수 있는 시간이 길수록 청산가치는 올라간다."
+        },
+        {
+         "q": "정상적으로 영업 중인 기업에서 going concern value가 liquidation value보다 보통 큰 이유는?",
+         "answer": "사업이 계속될 때만 존재하는 무형의 가치(브랜드 · 고객관계 · 조직 · 노하우)와 자산 결합의 시너지가 going concern value에는 포함되지만 개별 자산 매각 시에는 사라지기 때문",
+         "explain": "거꾸로 자산은 좋은데 사업이 만성적으로 가치를 파괴하면 liquidation value가 더 클 수 있다는 점도 같이 기억."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.c",
+     "title": "Definitions of value",
+     "titleKo": "가치의 여러 정의와 상장기업에 적합한 가치",
+     "losEn": "describe definitions of value and justify which definition of value is most relevant to public company valuation",
+     "keywords": [
+      "intrinsic value",
+      "fair market value",
+      "공정시장가치",
+      "investment value",
+      "투자가치",
+      "시너지",
+      "fair value"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "가치의 정의는 여러 개고 **목적에 따라 골라 쓴다**. 상장주식 투자판단에는 ==intrinsic value==, 전략적 인수에는 ==investment value==가 가장 적합하다."
+      },
+      {
+       "type": "h",
+       "text": "Intuition: 같은 집도 사는 사람마다 가치가 다르다"
+      },
+      {
+       "type": "p",
+       "text": "아파트 한 채를 생각해봐. 시장에서 형성되는 시세가 있고(fair market value), 그 옆 상가 주인이 주차장으로 연결해 쓰려고 웃돈을 줄 의향이 있는 가치가 있고(investment value), 임대수익과 입지를 다 따져 계산한 본질적 가치가 있어(intrinsic value). 같은 자산인데 **누가 왜 평가하느냐**에 따라 가치의 정의가 달라지는 거야."
+      },
+      {
+       "type": "h",
+       "text": "Technical: 4가지 가치 정의"
+      },
+      {
+       "type": "table",
+       "head": [
+        "정의",
+        "의미",
+        "주 사용처"
+       ],
+       "rows": [
+        [
+         "Intrinsic value",
+         "자산의 특성을 완전히 이해한 사람이 매기는 본질가치",
+         "**상장주식 투자판단** (가장 관련성 높음)"
+        ],
+        [
+         "Fair market value",
+         "의사와 정보와 능력이 있는 매도자와 매수자 간에 성립하는 가격",
+         "세무 · 재무보고의 fair value와 유사한 개념"
+        ],
+        [
+         "Investment value",
+         "**특정 매수자**에게만 성립하는 가치. 그 매수자의 니즈와 시너지 반영",
+         "M&A · 전략적 인수"
+        ],
+        [
+         "Liquidation value",
+         "개별 자산 처분가액 − 부채",
+         "존속 불가 기업 (17.b)"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "경영진이 주주 이익을 위해 움직인다는 신뢰가 있다면 market price는 **장기적으로** fair market value를 반영해 가야 해. 그리고 investment value는 매수자마다 달라. 같은 인수 대상이라도 유통망 시너지가 있는 A사와 시너지가 없는 B사에게 그 회사의 가치는 다르다."
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "\"상장기업 투자판단에 가장 적합한 가치는?\" → **intrinsic value**. \"인수 목적 평가에 적합한 가치는?\" → **investment value**.",
+        "케이스에서 '인수자의 유통망을 활용하면', '기존 사업과의 시너지' 같은 표현이 나오면 investment value를 고르라는 신호다."
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "trap",
+       "text": [
+        "**Trap 1** — investment value는 모든 투자자에게 같은 값이 아니다. 시너지가 매수자마다 다르므로 **buyer-specific**하다.",
+        "**Trap 2** — fair market value ≠ 항상 현재 market price. 시장이 비효율적이거나 경영진 신뢰가 무너지면 괴리가 생긴다.",
+        "**Trap 3** — '가장 높은 가치 정의'를 고르는 문제가 아니다. **평가 목적**에 맞는 정의를 고르는 문제다."
+       ]
+      },
+      {
+       "type": "example",
+       "title": "어떤 가치 정의를 써야 할까",
+       "setup": "제약사 S는 주방용품 제조사 I의 인수를 검토 중이다. S의 CEO는 자사의 우수한 유통망이 I의 매출을 크게 늘릴 수 있다고 본다. S가 I를 평가할 때 가장 적절한 가치의 정의는?",
+       "answer": [
+        "**Investment value.** 인수자 S에게만 존재하는 유통망 시너지가 가치의 핵심 논거이므로, 특정 매수자 관점의 가치인 investment value가 적합하다.",
+        "일반 소액주주가 I 주식을 사고팔 목적이라면 intrinsic value가 기준이 된다. 같은 회사라도 평가 목적이 다르면 가치의 정의가 달라진다."
+       ]
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.c",
+       "items": [
+        {
+         "q": "상장기업 주식의 투자판단에 가장 관련성 높은 가치의 정의는?",
+         "answer": "Intrinsic value",
+         "explain": "공개시장에서 다수 투자자를 전제로 한 투자판단이므로 특정 매수자 전제의 investment value가 아니라 본질가치가 기준이다."
+        },
+        {
+         "q": "fair market value의 정의에 반드시 들어가야 하는 요건 3가지는?",
+         "answer": "매도자와 매수자 모두 (1) 거래 의사가 있고(willing) (2) 정보를 갖추고 있고(informed) (3) 거래 능력이 있어야(able) 한다",
+         "explain": "강제된 거래나 정보 비대칭 상태의 가격은 fair market value가 아니다."
+        },
+        {
+         "q": "investment value가 intrinsic value보다 높게 나올 수 있는 대표적 이유는?",
+         "answer": "특정 매수자만 실현할 수 있는 시너지(유통망 · 비용절감 · 교차판매 등)가 investment value에는 반영되기 때문",
+         "explain": "그래서 M&A 인수가는 시장가에 경영권 프리미엄과 시너지 가치가 얹혀 형성되는 경우가 많다."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.d",
+     "title": "Applications of equity valuation",
+     "titleKo": "Equity valuation은 어디에 쓰이나",
+     "losEn": "describe applications of equity valuation",
+     "keywords": [
+      "applications",
+      "stock selection",
+      "reading the market",
+      "fairness opinion",
+      "corporate action",
+      "portfolio management",
+      "IPO"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "장면이 바뀌어도 도구는 같다. 종목 선정부터 fairness opinion까지, ==전부 V(E)를 만들어 P와 비교하는 같은 작업==의 다른 응용이다."
+      },
+      {
+       "type": "h",
+       "text": "Technical: 대표 응용처"
+      },
+      {
+       "type": "table",
+       "head": [
+        "응용",
+        "내용"
+       ],
+       "rows": [
+        [
+         "Stock selection",
+         "종목이 저평가 · 적정 · 고평가인지 판단해 매수/매도 결정"
+        ],
+        [
+         "Reading the market",
+         "현재 가격에 **내재된** 시장의 기대(성장률 등)를 역산해 시장의 컨센서스를 읽음"
+        ],
+        [
+         "Projecting corporate actions",
+         "M&A · 분할 · 자사주 매입 · MBO 같은 이벤트가 가치에 미치는 영향 추정"
+        ],
+        [
+         "Fairness opinions",
+         "합병 대가가 공정한지에 대한 제3자 의견 제공"
+        ],
+        [
+         "Planning & consulting",
+         "전략 대안별로 주주가치 영향을 평가해 의사결정 지원"
+        ],
+        [
+         "Communication",
+         "경영진 · analyst · 투자자 간 기업가치 논의의 공통 언어"
+        ],
+        [
+         "Private business valuation",
+         "비상장기업 평가 (IPO · 지분거래 · 상속 등, R22)"
+        ],
+        [
+         "Portfolio management",
+         "계획 · 실행 단계에서 어떤 종목을 담고 뺄지 결정"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "이 중 **reading the market**이 제일 낯설 수 있는데, 방향이 반대라는 점만 잡으면 돼. 보통은 가정을 넣어 가치를 뽑지만, 여기서는 가격을 주어진 것으로 놓고 ==그 가격이 성립하려면 시장이 어떤 성장률을 믿고 있어야 하는지==를 거꾸로 푸는 거야. R18의 implied growth rate가 정확히 이 작업이다."
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": "응용처를 나열하고 \"해당하지 않는 것\"을 고르는 유형. **technical analysis(차트 분석)는 equity valuation의 응용이 아니다.** valuation은 fundamentals 기반이라는 점이 구분 기준."
+      },
+      {
+       "type": "callout",
+       "style": "tip",
+       "title": "실무 연결",
+       "text": "IPO 수요예측 참여 판단이 stock selection + private business valuation의 결합이고, 합병비율 검토 의견서가 fairness opinion이며, 펀드 리밸런싱이 portfolio management 응용이다. 퇴직연금 ETF 라인업에서 특정 섹터의 밸류에이션 부담을 점검하는 것도 결국 같은 도구다."
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.d",
+       "items": [
+        {
+         "q": "equity valuation의 응용에 해당하지 않는 것은? (A) fairness opinion 작성 (B) 이동평균선 기반 매매 시점 포착 (C) 현재 주가에 내재된 성장 기대 역산",
+         "answer": "B",
+         "explain": "차트 · 수급 기반의 technical analysis는 fundamentals 기반 valuation의 응용이 아니다. (C)는 reading the market."
+        },
+        {
+         "q": "reading the market이 일반적인 valuation과 방향이 반대라는 말의 의미는?",
+         "answer": "일반 valuation은 가정 → 가치를 계산하지만, reading the market은 시장가격을 주어진 것으로 놓고 그 가격을 정당화하는 데 필요한 가정(내재 성장률 등)을 역산한다",
+         "explain": "R18 Gordon growth model에서 implied growth를 푸는 문제로 계산까지 연결된다."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.e",
+     "title": "Industry & competitive analysis",
+     "titleKo": "산업 · 경쟁 분석에서 던져야 할 질문들",
+     "losEn": "describe questions that should be addressed in conducting an industry and competitive analysis",
+     "keywords": [
+      "Porter",
+      "5 forces",
+      "five forces",
+      "경쟁전략",
+      "cost leadership",
+      "differentiation",
+      "focus",
+      "earnings quality",
+      "이익의 질",
+      "분식",
+      "SPE"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "valuation에 숫자를 넣기 전에 세 가지를 물어야 한다. ==산업이 돈 벌 구조인가(5 forces)== · ==회사가 어떤 전략으로 버는가(3 generic strategies)== · ==재무제표 숫자를 믿을 수 있는가(earnings quality)==."
+      },
+      {
+       "type": "h",
+       "text": "Porter의 5 forces: 산업의 장기 수익성"
+      },
+      {
+       "type": "p",
+       "text": "어떤 산업이 장기적으로 돈을 벌 수 있는지는 다섯 가지 경쟁 압력의 상호작용이 결정해. 다섯 힘이 전부 강하면 아무리 좋은 회사도 마진을 지키기 어렵고, 전부 약하면 평범한 회사도 높은 수익성을 유지할 수 있어."
+      },
+      {
+       "type": "svg",
+       "code": "<svg viewBox=\"0 0 720 380\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Pretendard, sans-serif\">\n<defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n<path d=\"M0,0 L6,3 L0,6 z\" fill=\"#6B7078\"/></marker></defs>\n<rect x=\"270\" y=\"155\" width=\"180\" height=\"72\" rx=\"12\" fill=\"#A63D40\"/>\n<text x=\"360\" y=\"186\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#fff\">기존 경쟁자 간 경쟁</text>\n<text x=\"360\" y=\"206\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#fff\">rivalry among existing competitors</text>\n<rect x=\"250\" y=\"25\" width=\"220\" height=\"64\" rx=\"10\" fill=\"#fff\" stroke=\"#33608C\" stroke-width=\"1.8\"/>\n<text x=\"360.0\" y=\"51.0\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#33608C\">신규 진입 위협</text>\n<text x=\"360.0\" y=\"70.0\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6B7078\">threat of new entrants</text>\n<rect x=\"250\" y=\"295\" width=\"220\" height=\"64\" rx=\"10\" fill=\"#fff\" stroke=\"#33608C\" stroke-width=\"1.8\"/>\n<text x=\"360.0\" y=\"321.0\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#33608C\">대체재 위협</text>\n<text x=\"360.0\" y=\"340.0\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6B7078\">threat of substitutes</text>\n<rect x=\"15\" y=\"155\" width=\"200\" height=\"72\" rx=\"10\" fill=\"#fff\" stroke=\"#3E7C5B\" stroke-width=\"1.8\"/>\n<text x=\"115.0\" y=\"185.0\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#3E7C5B\">공급자 교섭력</text>\n<text x=\"115.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6B7078\">bargaining power of suppliers</text>\n<rect x=\"505\" y=\"155\" width=\"200\" height=\"72\" rx=\"10\" fill=\"#fff\" stroke=\"#3E7C5B\" stroke-width=\"1.8\"/>\n<text x=\"605.0\" y=\"185.0\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#3E7C5B\">구매자 교섭력</text>\n<text x=\"605.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#6B7078\">bargaining power of buyers</text>\n<line x1=\"360\" y1=\"89\" x2=\"360\" y2=\"150\" stroke=\"#6B7078\" stroke-width=\"1.6\" marker-end=\"url(#ar3)\"/>\n<line x1=\"360\" y1=\"295\" x2=\"360\" y2=\"232\" stroke=\"#6B7078\" stroke-width=\"1.6\" marker-end=\"url(#ar3)\"/>\n<line x1=\"215\" y1=\"191\" x2=\"265\" y2=\"191\" stroke=\"#6B7078\" stroke-width=\"1.6\" marker-end=\"url(#ar3)\"/>\n<line x1=\"505\" y1=\"191\" x2=\"455\" y2=\"191\" stroke=\"#6B7078\" stroke-width=\"1.6\" marker-end=\"url(#ar3)\"/>\n</svg>",
+       "caption": "Porter의 5 forces — 다섯 압력이 모두 산업의 장기 수익성(attractiveness)을 결정한다"
+      },
+      {
+       "type": "list",
+       "ordered": true,
+       "items": [
+        "**신규 진입 위협** — 진입장벽이 낮으면 초과이익이 금방 침식된다",
+        "**대체재 위협** — 산업 밖에서 같은 니즈를 채우는 대안의 존재",
+        "**구매자 교섭력** — 고객이 소수 · 대형이면 가격 인하 압력",
+        "**공급자 교섭력** — 핵심 원재료 공급자가 소수면 원가 압박",
+        "**기존 경쟁자 간 경쟁** — 산업 내 경쟁 강도. 고정비가 크고 차별화가 어려울수록 치열"
+       ]
+      },
+      {
+       "type": "h",
+       "text": "3가지 본원적 경쟁전략"
+      },
+      {
+       "type": "table",
+       "head": [
+        "전략",
+        "내용",
+        "예시 이미지"
+       ],
+       "rows": [
+        [
+         "Cost leadership",
+         "산업 내 **최저원가** 생산자가 되는 전략",
+         "대규모 양산 · 원가 절감형 제조사"
+        ],
+        [
+         "Differentiation",
+         "프리미엄 가격을 정당화하는 **차별화된 제품/서비스**",
+         "브랜드 · 기술 기반 프리미엄 업체"
+        ],
+        [
+         "Focus",
+         "특정 세그먼트에 집중해 위 두 전략 중 하나를 구사",
+         "니치 시장 특화 업체"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "analyst는 회사가 어떤 전략을 표방하는지 확인한 뒤, **시간에 걸쳐 그 전략을 실제로 잘 실행해 왔는지**를 실적으로 검증해. 전략 따로 실적 따로면 스토리를 믿으면 안 돼."
+      },
+      {
+       "type": "h",
+       "text": "Earnings quality: 숫자를 믿을 수 있는가"
+      },
+      {
+       "type": "p",
+       "text": "valuation의 재료는 회계 정보야. 재료가 오염돼 있으면 어떤 모델도 소용없어. 이익의 질 문제는 본문보다 **주석(footnotes)과 공시**에서만 드러나는 경우가 많고, 이익이 투명한 기업일수록 시장가치가 높게 형성되는 경향이 연구로 확인돼 있어."
+      },
+      {
+       "type": "table",
+       "head": [
+        "조작 유형",
+        "수법 예시"
+       ],
+       "rows": [
+        [
+         "매출의 조기 인식",
+         "출하 전 매출 인식, bill-and-hold(선청구 후 보관)"
+        ],
+        [
+         "이익 재분류",
+         "일회성 · 영업외 이익을 영업이익으로 분류해 본업 부진 은폐"
+        ],
+        [
+         "비용 인식 왜곡",
+         "비용의 자본화, 영업비용의 영업외 분류, 충당금 자의적 설정"
+        ],
+        [
+         "상각 · 할인율 재량",
+         "감가상각 방법 · 내용연수, 연금부채 할인율 선택으로 비용 이연"
+        ],
+        [
+         "부외 항목",
+         "SPE를 통한 매출 부풀리기 · 부채 은폐, 리스 구조화"
+        ]
+       ]
+      },
+      {
+       "type": "h3",
+       "text": "이익의 질 악화 경고 신호"
+      },
+      {
+       "type": "list",
+       "items": [
+        "감독당국 제재 이력, 공시 지연",
+        "특수관계자 거래, 임원 · 이사에 대한 과도한 대여금",
+        "부실한 세그먼트 공시, 부정적 요인에 대한 설명 회피",
+        "경영진 · 이사 · 감사인의 잦은 교체, 감사인과의 분쟁",
+        "감사법인의 컨설팅 겸업",
+        "수익성 · 주가 연동 보상 구조",
+        "마진 · 점유율 하락, 부채 covenant나 실적 기대치 충족 압박"
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "5 forces 구성요소를 살짝 비튼 보기가 단골. ==rivalry among **buyers**(X)== · ==bargaining power of **competitors**(X)== 같은 조합 바꿔치기를 조심해. 올바른 짝: 위협 2개(신규진입 · 대체재) + 교섭력 2개(구매자 · 공급자) + 경쟁 1개(기존 경쟁자).",
+        "earnings quality 이슈가 **주석에서만 확인되는 경우가 많다**는 포인트도 자주 나온다."
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "tip",
+       "title": "실무 연결",
+       "text": "IPO 기업 검토 때 매출 급증이 bill-and-hold성인지, 특수관계자 매출 비중이 얼마인지, 상장 직전 회계정책 변경이 있는지 보는 게 정확히 이 체크리스트야. 반도체 소재 기업 분석에서 고객 집중도(구매자 교섭력)와 공정 전환에 따른 대체 위협을 보는 것도 5 forces의 응용."
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.e",
+       "items": [
+        {
+         "q": "Porter의 5 forces에 포함되는 것은? (A) threat of substitutes (B) rivalry among buyers (C) bargaining power of competitors",
+         "answer": "A",
+         "explain": "(B)(C)는 단어를 바꿔치기한 함정. rivalry는 기존 '경쟁자' 간, bargaining power는 '구매자 · 공급자'의 것이다."
+        },
+        {
+         "q": "세 가지 본원적 전략 중, 특정 고객 세그먼트 안에서 최저원가 전략을 구사하는 것은?",
+         "answer": "Focus (cost focus)",
+         "explain": "focus는 독립된 제3의 전략이라기보다 좁힌 시장에서 cost leadership 또는 differentiation을 실행하는 것."
+        },
+        {
+         "q": "이익의 질을 점검할 때 재무제표 본문보다 주석이 중요한 이유는?",
+         "answer": "매출 인식 정책, 충당금 · 상각 가정, SPE와 리스 구조, 특수관계자 거래 같은 경영진 재량의 흔적은 본문 숫자가 아니라 주석과 공시에서만 드러나는 경우가 많기 때문",
+         "explain": "이익이 투명한 기업이 더 높은 시장가치를 받는 경향도 함께 기억."
+        },
+        {
+         "q": "다음 중 이익의 질 악화 경고 신호가 아닌 것은? (A) 감사인 교체와 분쟁 (B) 특수관계자 거래 증가 (C) 배당성향의 안정적 유지",
+         "answer": "C",
+         "explain": "안정적 배당정책은 경고 신호가 아니다. 나머지는 대표적인 warning signs."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.f",
+     "title": "Absolute vs relative valuation models",
+     "titleKo": "절대가치 모델 vs 상대가치 모델",
+     "losEn": "contrast absolute and relative valuation models and describe examples of each type of model",
+     "keywords": [
+      "absolute valuation",
+      "relative valuation",
+      "절대가치",
+      "상대가치",
+      "DDM",
+      "FCF",
+      "residual income",
+      "asset-based",
+      "multiples",
+      "P/E",
+      "EV/EBITDA",
+      "law of one price"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "**Absolute**는 다른 회사를 안 보고 이 자산의 내재가치를 직접 계산하는 것, **Relative**는 비슷한 자산 대비 싼지 비싼지를 보는 것. relative의 결론은 ==항상 '상대적으로'라는 단서==가 붙는다."
+      },
+      {
+       "type": "h",
+       "text": "Technical: 두 접근의 구조"
+      },
+      {
+       "type": "svg",
+       "code": "<svg viewBox=\"0 0 720 330\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Pretendard, sans-serif\">\n<rect x=\"270\" y=\"15\" width=\"180\" height=\"52\" rx=\"10\" fill=\"#2A2D34\"/>\n<text x=\"360\" y=\"46\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#fff\">Valuation models</text>\n<line x1=\"360\" y1=\"67\" x2=\"185\" y2=\"105\" stroke=\"#6B7078\" stroke-width=\"1.6\"/>\n<line x1=\"360\" y1=\"67\" x2=\"535\" y2=\"105\" stroke=\"#6B7078\" stroke-width=\"1.6\"/>\n<rect x=\"80\" y=\"105\" width=\"210\" height=\"52\" rx=\"10\" fill=\"#A63D40\"/>\n<text x=\"185\" y=\"127\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#fff\">Absolute</text>\n<text x=\"185\" y=\"146\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#fff\">내재가치를 직접 추정</text>\n<rect x=\"430\" y=\"105\" width=\"210\" height=\"52\" rx=\"10\" fill=\"#33608C\"/>\n<text x=\"535\" y=\"127\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#fff\">Relative</text>\n<text x=\"535\" y=\"146\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#fff\">다른 자산과 비교해 평가</text>\n<line x1=\"185\" y1=\"157\" x2=\"185\" y2=\"180\" stroke=\"#6B7078\" stroke-width=\"1.4\"/>\n<line x1=\"535\" y1=\"157\" x2=\"535\" y2=\"180\" stroke=\"#6B7078\" stroke-width=\"1.4\"/>\n<rect x=\"45\" y=\"185\" width=\"130\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"1.6\"/>\n<text x=\"110.0\" y=\"210\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">DDM · 배당할인</text>\n<rect x=\"45\" y=\"235\" width=\"130\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"1.6\"/>\n<text x=\"110.0\" y=\"260\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">FCFF / FCFE</text>\n<rect x=\"195\" y=\"185\" width=\"130\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"1.6\"/>\n<text x=\"260.0\" y=\"210\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">Residual income</text>\n<rect x=\"195\" y=\"235\" width=\"130\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"1.6\"/>\n<text x=\"260.0\" y=\"260\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">Asset-based</text>\n<rect x=\"415\" y=\"185\" width=\"110\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#33608C\" stroke-width=\"1.6\"/>\n<text x=\"470.0\" y=\"210\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">P/E · P/B</text>\n<rect x=\"535\" y=\"185\" width=\"110\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#33608C\" stroke-width=\"1.6\"/>\n<text x=\"590.0\" y=\"210\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">P/S · P/CF</text>\n<rect x=\"475\" y=\"235\" width=\"120\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#33608C\" stroke-width=\"1.6\"/>\n<text x=\"535.0\" y=\"260\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"600\" fill=\"#2A2D34\">EV/EBITDA</text>\n<text x=\"185\" y=\"308\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">현금흐름 · 초과이익 · 자산의 현재가치</text>\n<text x=\"535\" y=\"308\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">비교 대상(peer) 대비 싸다/비싸다 판단</text>\n</svg>",
+       "caption": "절대가치 모델과 상대가치 모델의 분류"
+      },
+      {
+       "type": "list",
+       "items": [
+        "**Absolute valuation model** — 다른 기업의 가격과 무관하게, 자산의 투자 특성에서 나오는 **intrinsic value 자체를 추정**. 미래 현금흐름을 할인하는 DDM · FCFF/FCFE · residual income, 그리고 보유 자산의 시장가치를 합산하는 **asset-based model**(광산 · 유전 등 자원 보유 기업에 흔히 사용)이 여기 속한다",
+        "**Relative valuation model** — 자산의 가치를 **다른 자산들의 가치에 비추어** 판단. 대표적으로 가격을 재무지표로 나눈 multiple(P/E · P/B · P/S · EV/EBITDA)을 peer와 비교한다. 비슷한 자산은 비슷한 가격에 거래되어야 한다는 **law of one price**가 이론적 바탕"
+       ]
+      },
+      {
+       "type": "p",
+       "text": "relative 판단의 언어에 주의해. peer보다 P/E가 높으면 **relatively overvalued**, 낮으면 **relatively undervalued**야. 이건 어디까지나 비교 대상 대비의 판단이고, ==intrinsic 기준으로도 고평가/저평가라는 뜻이 아니야==. peer 그룹 전체가 버블이면 그 안에서 제일 싼 종목도 절대적으로는 비쌀 수 있어."
+      },
+      {
+       "type": "h",
+       "text": "헷갈리는 비교"
+      },
+      {
+       "type": "table",
+       "head": [
+        "구분",
+        "Absolute",
+        "Relative"
+       ],
+       "rows": [
+        [
+         "질문",
+         "이 자산의 가치는 얼마인가",
+         "peer 대비 싼가 비싼가"
+        ],
+        [
+         "기준점",
+         "자산 자신의 현금흐름 · 자산가치",
+         "다른 자산들의 시장가격"
+        ],
+        [
+         "대표 모델",
+         "DDM · FCFF/FCFE · RI · asset-based",
+         "P/E · P/B · P/S · P/CF · EV/EBITDA"
+        ],
+        [
+         "장점",
+         "가치의 근거가 fundamentals에 직접 연결",
+         "간단 · 빠름 · 시장의 현재 평가 반영"
+        ],
+        [
+         "약점",
+         "가정에 민감, 입력값 추정 부담",
+         "peer 전체의 고/저평가를 걸러내지 못함"
+        ]
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "\"다음 중 absolute valuation model이 **아닌** 것은?\" → P/E 같은 **market multiple 모델**이 정답. DDM · RI · FCF · asset-based는 전부 absolute다.",
+        "==asset-based model이 relative가 아니라 absolute==라는 점이 최다 실수 포인트. 자산의 시장가치 합산은 peer 비교가 아니다."
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "trap",
+       "text": [
+        "**Trap 1** — relative에서 undervalued 판정을 받아도 intrinsic 기준 undervalued라는 보장이 없다.",
+        "**Trap 2** — residual income은 book value를 쓴다고 relative가 아니다. 초과이익의 현재가치를 더해 내재가치를 직접 구하므로 absolute다.",
+        "**Trap 3** — 같은 회사에 두 접근을 동시에 쓰는 건 오류가 아니라 권장사항이다(17.h)."
+       ]
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.f",
+       "items": [
+        {
+         "q": "absolute valuation model의 예가 아닌 것은? (A) dividend discount model (B) price-to-earnings 비교 모델 (C) residual income model",
+         "answer": "B",
+         "explain": "P/E 비교는 peer 대비 상대평가이므로 relative valuation이다."
+        },
+        {
+         "q": "자원(광산 · 유전) 보유 기업에 흔히 쓰이는 absolute 접근은?",
+         "answer": "Asset-based model — 기업이 보유 · 지배하는 자산의 시장가치 합으로 기업가치를 추정",
+         "explain": "현금흐름 할인이 아니어도 peer 비교가 아니면 absolute로 분류된다."
+        },
+        {
+         "q": "A사의 P/E가 peer 평균보다 낮아 relatively undervalued로 판정됐다. 그런데도 A사 매수가 나쁜 결정일 수 있는 이유는?",
+         "answer": "(1) peer 그룹 전체가 고평가라면 상대적으로 싸도 절대적으로는 비쌀 수 있고 (2) 낮은 P/E가 낮은 성장성 · 높은 리스크 등 fundamentals 차이를 반영한 정당한 가격일 수 있기 때문",
+         "explain": "relative 판단에는 항상 '비교 대상 대비'라는 조건이 붙는다."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.g",
+     "title": "Sum-of-the-parts & conglomerate discount",
+     "titleKo": "SOTP 평가와 conglomerate discount",
+     "losEn": "describe sum-of-the-parts valuation and conglomerate discounts",
+     "keywords": [
+      "SOTP",
+      "sum of the parts",
+      "breakup value",
+      "private market value",
+      "conglomerate discount",
+      "지주사 디스카운트",
+      "분할",
+      "spin-off"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "이질적인 사업부를 가진 회사는 **부분별로 따로 평가해 합산**(SOTP)하는 게 정확하고, 시장가치가 그 합보다 낮게 형성되는 폭이 ==conglomerate discount==다."
+      },
+      {
+       "type": "h",
+       "text": "Technical: SOTP의 정의와 쓰임"
+      },
+      {
+       "type": "p",
+       "text": "회사를 하나의 덩어리로 평가하는 대신 **개별 사업부(또는 제품 라인)를 각각 평가해 더한 값**이 sum-of-the-parts value야. **breakup value** 또는 **private market value**라고도 불러. 사업부마다 비즈니스 모델과 리스크가 달라서 단일 multiple이나 단일 할인율로 묶기 어려운 **conglomerate**에 특히 유용해. 반도체 사업부는 반도체 peer의 EV/EBITDA로, 금융 사업부는 P/B로, 각자에게 맞는 잣대를 대는 거지."
+      },
+      {
+       "type": "svg",
+       "code": "<svg viewBox=\"0 0 720 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Pretendard, sans-serif\">\n<text x=\"200\" y=\"28\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2A2D34\">Sum-of-the-parts value</text>\n<rect x=\"120\" y=\"200\" width=\"160\" height=\"60\" rx=\"6\" fill=\"#33608C\"/>\n<text x=\"200\" y=\"235\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">사업부 A · 40</text>\n<rect x=\"120\" y=\"130\" width=\"160\" height=\"66\" rx=\"6\" fill=\"#3E7C5B\"/>\n<text x=\"200\" y=\"168\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">사업부 B · 45</text>\n<rect x=\"120\" y=\"55\" width=\"160\" height=\"71\" rx=\"6\" fill=\"#B07A2A\"/>\n<text x=\"200\" y=\"95\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">사업부 C · 35</text>\n<text x=\"200\" y=\"285\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2A2D34\">SOTP = 120</text>\n\n<text x=\"520\" y=\"28\" text-anchor=\"middle\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2A2D34\">시장의 평가</text>\n<rect x=\"440\" y=\"107\" width=\"160\" height=\"153\" rx=\"6\" fill=\"#2A2D34\"/>\n<text x=\"520\" y=\"180\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#fff\">Market value = 95</text>\n<rect x=\"440\" y=\"55\" width=\"160\" height=\"48\" rx=\"6\" fill=\"none\" stroke=\"#A63D40\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/>\n<text x=\"520\" y=\"83\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"700\" fill=\"#A63D40\">conglomerate discount 25</text>\n<text x=\"520\" y=\"285\" text-anchor=\"middle\" font-size=\"12.5\" fill=\"#6B7078\">시장가치가 SOTP를 밑도는 폭</text>\n<line x1=\"300\" y1=\"160\" x2=\"420\" y2=\"160\" stroke=\"#6B7078\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<text x=\"360\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"#6B7078\">비교</text>\n<text x=\"360\" y=\"325\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"#6B7078\">서로 다른 사업을 하나의 상장사가 담고 있을 때 시장이 가치를 깎아 평가하는 현상</text>\n</svg>",
+       "caption": "SOTP 120 vs 시장가치 95 → conglomerate discount 25"
+      },
+      {
+       "type": "formula",
+       "latex": "\\text{Conglomerate discount} = \\text{SOTP value} - \\text{Market value}",
+       "caption": "시장가치가 부분의 합을 밑도는 금액. 비율로 표현하면 (SOTP − MV) / SOTP."
+      },
+      {
+       "type": "h",
+       "text": "conglomerate discount가 생기는 3가지 설명"
+      },
+      {
+       "type": "list",
+       "ordered": true,
+       "items": [
+        "**Internal capital inefficiency (내부 자본배분 비효율)** — 그룹 내부에서 자본이 수익성 낮은 사업부로 흘러가는 등 배분 의사결정이 비합리적일 수 있음",
+        "**Endogenous factors (내생적 요인)** — 본업의 부진을 가리기 위해 무관한 사업을 인수하는 등 다각화 자체가 문제의 신호일 수 있음",
+        "**Research measurement errors (측정 오류)** — 애초에 discount가 실재하지 않으며 연구 방법상 측정 오류라는 가설"
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "\"인수 발표 후 인수기업 주가 하락\"의 원인으로 무관한 업종 인수가 제시되면 → **conglomerate discount**를 고르는 문제가 전형적.",
+        "discount의 3가지 설명(자본배분 비효율 · 내생적 요인 · 측정 오류)은 셋 다 나열형으로 출제 가능. 특히 ==측정 오류 가설(discount가 실재하지 않을 수 있다)==이 포함된다는 점이 의외의 포인트."
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "tip",
+       "title": "실무 연결",
+       "text": "한국 지주회사 디스카운트가 교과서적 사례야. 상장 자회사 지분가치 합계 대비 지주사 시총이 절반 이하로 거래되는 경우가 흔하고, analyst들은 NAV(순자산가치) 대비 할인율로 이를 수치화해. 계열사 분할 · spin-off가 discount 해소 이벤트로 주목받는 이유도 SOTP 프레임에서 나온다."
+      },
+      {
+       "type": "example",
+       "title": "SOTP와 discount 계산",
+       "setup": "H그룹은 3개 사업부를 보유한다. 전자 사업부의 적정가치 4.0조원, 화학 2.5조원, 금융 1.5조원으로 평가되고 순차입금은 1.0조원이다. 현재 시가총액이 5.2조원이라면 conglomerate discount는 얼마이고 SOTP 대비 몇 %인가?",
+       "steps": [
+        "SOTP 기업가치 = 4.0 + 2.5 + 1.5 = 8.0조원",
+        "SOTP 주주가치 = 8.0 − 순차입금 1.0 = 7.0조원",
+        "discount = 7.0 − 5.2 = 1.8조원"
+       ],
+       "answer": [
+        "conglomerate discount = **1.8조원**, 비율로는 1.8 / 7.0 ≈ **25.7%**",
+        "시장은 부분의 합 대비 약 4분의 1을 깎아 평가하고 있다. 자본배분 비효율에 대한 우려, 다각화의 내생적 문제, 또는 측정 오류 중 무엇이 원인인지가 다음 질문이 된다."
+       ]
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.g",
+       "items": [
+        {
+         "q": "SOTP value의 다른 이름 두 가지는?",
+         "answer": "Breakup value, private market value",
+         "explain": "사업부를 쪼개 팔았을 때의 가치라는 의미가 이름에 그대로 담겨 있다."
+        },
+        {
+         "q": "conglomerate discount의 설명으로 제시되는 3가지는?",
+         "answer": "(1) 내부 자본배분의 비효율 (2) 부진 은폐형 다각화 같은 내생적 요인 (3) discount가 실재하지 않는다는 측정 오류 가설",
+         "explain": "세 번째 가설까지 포함해서 3개를 완성해야 한다."
+        },
+        {
+         "q": "SOTP 평가가 특히 유용한 기업의 특징은?",
+         "answer": "비즈니스 모델과 리스크 특성이 서로 다른 복수의 사업부(또는 제품 라인)를 보유한 기업, 즉 conglomerate",
+         "explain": "사업부별로 적합한 평가 잣대(multiple · 할인율)가 다르기 때문이다."
+        },
+        {
+         "q": "제약사가 주방용품 회사를 시장가에 현금 인수한다고 발표하자 인수기업 주가가 하락했다. 가장 가능성 높은 원인은? (A) 세금 효과 (B) conglomerate discount (C) 유동성 프리미엄",
+         "answer": "B",
+         "explain": "무관한 업종으로의 다각화에 시장이 할인을 적용한 것. 자본배분 비효율과 부진 은폐 우려가 반영된다."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "17.h",
+     "title": "Choosing a valuation approach",
+     "titleKo": "평가 모델 선택의 3가지 기준",
+     "losEn": "explain broad criteria for choosing an appropriate approach for valuing a given company",
+     "keywords": [
+      "model selection",
+      "모델 선택",
+      "criteria",
+      "기업 특성",
+      "데이터 가용성",
+      "분석 목적",
+      "경영권",
+      "controlling interest",
+      "복수 모델"
+     ],
+     "blocks": [
+      {
+       "type": "callout",
+       "style": "intuition",
+       "title": "한 줄 요약",
+       "text": "모델 선택 기준은 딱 3개. ==기업 특성에 맞는가== · ==데이터가 받쳐주는가== · ==분석 목적에 맞는가==. 그리고 하나만 골라야 하는 게 아니라 **여러 모델을 병행**해도 된다."
+      },
+      {
+       "type": "h",
+       "text": "Technical: 3가지 선택 기준"
+      },
+      {
+       "type": "svg",
+       "code": "<svg viewBox=\"0 0 720 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Pretendard, sans-serif\">\n<defs><marker id=\"ar4\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\">\n<path d=\"M0,0 L6,3 L0,6 z\" fill=\"#6B7078\"/></marker></defs>\n<rect x=\"255\" y=\"18\" width=\"210\" height=\"50\" rx=\"10\" fill=\"#2A2D34\"/>\n<text x=\"360\" y=\"48\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#fff\">어떤 모델을 쓸 것인가</text>\n<line x1=\"360\" y1=\"68\" x2=\"130\" y2=\"105\" stroke=\"#6B7078\" stroke-width=\"1.5\" marker-end=\"url(#ar4)\"/>\n<line x1=\"360\" y1=\"68\" x2=\"360\" y2=\"105\" stroke=\"#6B7078\" stroke-width=\"1.5\" marker-end=\"url(#ar4)\"/>\n<line x1=\"360\" y1=\"68\" x2=\"590\" y2=\"105\" stroke=\"#6B7078\" stroke-width=\"1.5\" marker-end=\"url(#ar4)\"/>\n<rect x=\"20\" y=\"110\" width=\"220\" height=\"105\" rx=\"10\" fill=\"#fff\" stroke=\"#A63D40\" stroke-width=\"1.8\"/>\n<text x=\"130\" y=\"136\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#A63D40\">① 기업 특성에 맞는가</text>\n<text x=\"130\" y=\"160\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">배당을 지급하는가?</text>\n<text x=\"130\" y=\"178\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">이익 성장을 추정할 수 있는가?</text>\n<text x=\"130\" y=\"196\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">무형자산 비중이 큰가?</text>\n<rect x=\"250\" y=\"110\" width=\"220\" height=\"105\" rx=\"10\" fill=\"#fff\" stroke=\"#33608C\" stroke-width=\"1.8\"/>\n<text x=\"360\" y=\"136\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#33608C\">② 데이터가 받쳐주는가</text>\n<text x=\"360\" y=\"160\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">입력값의 질과 가용성</text>\n<text x=\"360\" y=\"178\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">신뢰할 수 있는 추정이</text>\n<text x=\"360\" y=\"196\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">가능한 데이터인가?</text>\n<rect x=\"480\" y=\"110\" width=\"220\" height=\"105\" rx=\"10\" fill=\"#fff\" stroke=\"#3E7C5B\" stroke-width=\"1.8\"/>\n<text x=\"590\" y=\"136\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"700\" fill=\"#3E7C5B\">③ 분석 목적에 맞는가</text>\n<text x=\"590\" y=\"160\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">소수지분 투자 vs 경영권 인수</text>\n<text x=\"590\" y=\"178\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">경영권 인수면 배당정책을 바꿀 수</text>\n<text x=\"590\" y=\"196\" text-anchor=\"middle\" font-size=\"10.8\" fill=\"#6B7078\">있으므로 배당보다 현금흐름 기준</text>\n<rect x=\"200\" y=\"245\" width=\"320\" height=\"42\" rx=\"10\" fill=\"#A63D40\"/>\n<text x=\"360\" y=\"271\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#fff\">여러 모델을 함께 쓰는 것도 방법이다</text>\n</svg>",
+       "caption": "모델 선택의 3가지 질문과 복수 모델 병행"
+      },
+      {
+       "type": "list",
+       "ordered": true,
+       "items": [
+        "**기업 특성 적합성** — 배당을 지급하는가(→DDM 가능 여부), 이익 성장을 추정할 수 있는가, 무형자산이 큰 비중을 차지하는가 같은 질문으로 모델과 기업의 궁합을 본다",
+        "**입력 데이터의 질과 가용성** — 아무리 이론적으로 좋은 모델도 신뢰할 만한 입력값을 구할 수 없으면 무용지물",
+        "**분석 목적 적합성** — 같은 회사라도 목적이 다르면 모델이 달라진다. 예컨대 **경영권 인수** 목적이면 인수자가 배당정책을 직접 바꿀 수 있으므로 배당 기반(DDM)보다 **현금흐름 기반 모델**이 적합"
+       ]
+      },
+      {
+       "type": "p",
+       "text": "마지막으로 중요한 건, 모델을 **하나만 골라야 한다는 규칙은 없다**는 점이야. 여러 모델의 결과를 비교하면 각 모델의 가정과 분석 관점이 추정치에 어떤 영향을 주는지 드러나고, 그 차이 자체가 정보가 돼."
+      },
+      {
+       "type": "h",
+       "text": "상황별 모델 매칭 감각 (뒤 Reading 예고편)"
+      },
+      {
+       "type": "table",
+       "head": [
+        "기업 상황",
+        "어울리는 접근",
+        "이유"
+       ],
+       "rows": [
+        [
+         "배당 이력이 길고 안정적, 배당이 수익력과 연동",
+         "DDM (R18)",
+         "배당이 현금흐름의 신뢰할 만한 대리변수"
+        ],
+        [
+         "배당이 없거나 불규칙, 경영권 관점 평가",
+         "FCFF / FCFE (R19)",
+         "분배 가능한 현금흐름 자체를 직접 평가"
+        ],
+        [
+         "배당도 FCF도 없지만 회계이익과 장부가치는 신뢰 가능",
+         "Residual income (R21)",
+         "book value + 초과이익으로 평가"
+        ],
+        [
+         "peer가 풍부하고 빠른 비교가 필요",
+         "Multiples (R20)",
+         "시장의 현재 평가를 기준으로 상대 비교"
+        ],
+        [
+         "이질적 사업부 복수 보유",
+         "SOTP (17.g)",
+         "사업부별로 다른 잣대 적용"
+        ],
+        [
+         "존속 가능성 자체가 불확실",
+         "Liquidation value (17.b)",
+         "going concern 가정이 깨짐"
+        ]
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "exam",
+       "text": [
+        "\"배당 지급 여부 · 이익 성장 추정 가능성 · 무형자산 보유\"를 묻고 있다면 → 3가지 기준 중 **① 기업 특성 적합성**을 확인 중인 것. 세 질문이 어느 기준에 속하는지 매칭하는 문제가 나온다.",
+        "\"경영권 인수 시 DDM보다 FCF가 적합한 이유\" → ==지배주주는 배당정책을 바꿀 수 있기 때문==. 이 논리는 R18 · R19에서도 반복 출제된다."
+       ]
+      },
+      {
+       "type": "callout",
+       "style": "link",
+       "title": "다른 LOS 연결",
+       "text": "이 LOS는 R17의 마무리이자 R18~R22 전체의 목차 역할이야. 18(DDM) · 19(FCF) · 20(multiples) · 21(RI) · 22(private company)를 배울 때마다 \"이 모델은 3가지 기준에서 언제 선택되는가\"로 되돌아오면 전체 그림이 유지된다."
+      },
+      {
+       "type": "quiz",
+       "title": "확인 퀴즈 · LOS 17.h",
+       "items": [
+        {
+         "q": "모델 선택의 3가지 기준은?",
+         "answer": "(1) 기업 특성에 맞는가 (2) 입력 데이터의 질과 가용성이 충분한가 (3) 분석 목적에 적합한가",
+         "explain": "characteristics · data · purpose 세 단어로 압축해 암기."
+        },
+        {
+         "q": "'배당을 지급하는가? 이익 성장이 추정 가능한가? 무형자산이 큰가?'라는 질문 묶음은 3가지 기준 중 무엇을 점검하는 것인가?",
+         "answer": "기업 특성 적합성 (모델이 기업의 특성에 맞는가)",
+         "explain": "데이터 가용성이나 분석 목적이 아니라 기업-모델 궁합을 보는 질문들이다."
+        },
+        {
+         "q": "경영권 인수 목적의 평가에서 배당 기반 모델보다 현금흐름 기반 모델이 선호되는 이유는?",
+         "answer": "지배지분을 인수하면 배당정책을 인수자가 직접 결정할 수 있으므로, 현재 배당보다 기업이 창출하는 현금흐름 자체가 가치의 기준이 되기 때문",
+         "explain": "소수지분 투자자는 배당정책을 바꿀 수 없다는 대비도 함께 기억."
+        },
+        {
+         "q": "한 회사에 여러 valuation 모델을 동시에 적용하는 것에 대한 CFA의 입장은?",
+         "answer": "권장된다. 모델별 추정치의 차이를 비교하면 각 모델의 가정과 분석 관점이 결과에 미치는 영향을 파악할 수 있다",
+         "explain": "하나의 정답 모델을 고르는 시험이 아니라 차이를 해석하는 능력을 본다."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "R18",
+   "readingNumber": 18,
+   "title": "Discounted Dividend Valuation",
+   "titleKo": "배당할인모형 (DDM)",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R18 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "18.a",
+     "title": "현금흐름 지표 비교: 배당 · FCF · RI와 각각의 적용 상황",
+     "titleKo": "현금흐름 지표 비교: 배당 · FCF · RI와 각각의 적용 상황"
+    },
+    {
+     "id": "18.b",
+     "title": "단일 · 복수 보유기간 DDM 계산",
+     "titleKo": "단일 · 복수 보유기간 DDM 계산"
+    },
+    {
+     "id": "18.c",
+     "title": "Gordon growth model 계산과 가정",
+     "titleKo": "Gordon growth model 계산과 가정"
+    },
+    {
+     "id": "18.d",
+     "title": "비상환 고정배당 우선주 가치",
+     "titleKo": "비상환 고정배당 우선주 가치"
+    },
+    {
+     "id": "18.e",
+     "title": "GGM의 강점 · 한계와 선택 정당화",
+     "titleKo": "GGM의 강점 · 한계와 선택 정당화"
+    },
+    {
+     "id": "18.f",
+     "title": "GGM으로 내재 성장률 역산",
+     "titleKo": "GGM으로 내재 성장률 역산"
+    },
+    {
+     "id": "18.g",
+     "title": "PVGO와 leading P/E의 분해",
+     "titleKo": "PVGO와 leading P/E의 분해"
+    },
+    {
+     "id": "18.h",
+     "title": "justified leading · trailing P/E",
+     "titleKo": "justified leading · trailing P/E"
+    },
+    {
+     "id": "18.i",
+     "title": "DDM 기반 요구수익률 추정 (GGM · H-model)",
+     "titleKo": "DDM 기반 요구수익률 추정 (GGM · H-model)"
+    },
+    {
+     "id": "18.j",
+     "title": "DDM 추정치 기반 고평가 · 저평가 판단",
+     "titleKo": "DDM 추정치 기반 고평가 · 저평가 판단"
+    },
+    {
+     "id": "18.k",
+     "title": "성장 · 전환 · 성숙 단계",
+     "titleKo": "성장 · 전환 · 성숙 단계"
+    },
+    {
+     "id": "18.l",
+     "title": "2단계 · H-model · 3단계 · 스프레드시트 모델의 선택",
+     "titleKo": "2단계 · H-model · 3단계 · 스프레드시트 모델의 선택"
+    },
+    {
+     "id": "18.m",
+     "title": "terminal value의 접근법",
+     "titleKo": "terminal value의 접근법"
+    },
+    {
+     "id": "18.n",
+     "title": "2단계 · H-model · 3단계 DDM 계산",
+     "titleKo": "2단계 · H-model · 3단계 DDM 계산"
+    },
+    {
+     "id": "18.o",
+     "title": "스프레드시트 기반 배당 예측",
+     "titleKo": "스프레드시트 기반 배당 예측"
+    },
+    {
+     "id": "18.p",
+     "title": "지속가능성장률과 DuPont 분해",
+     "titleKo": "지속가능성장률과 DuPont 분해"
+    }
+   ]
+  },
+  {
+   "id": "R19",
+   "readingNumber": 19,
+   "title": "Free Cash Flow Valuation",
+   "titleKo": "잉여현금흐름 평가 (FCFF · FCFE)",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R19 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "19.a",
+     "title": "FCFF vs FCFE 접근 비교",
+     "titleKo": "FCFF vs FCFE 접근 비교"
+    },
+    {
+     "id": "19.b",
+     "title": "FCFE의 소유 관점",
+     "titleKo": "FCFE의 소유 관점"
+    },
+    {
+     "id": "19.c",
+     "title": "NI · EBIT · EBITDA · CFO에서 FCFF · FCFE로의 조정",
+     "titleKo": "NI · EBIT · EBITDA · CFO에서 FCFF · FCFE로의 조정"
+    },
+    {
+     "id": "19.d",
+     "title": "FCFF · FCFE 계산",
+     "titleKo": "FCFF · FCFE 계산"
+    },
+    {
+     "id": "19.e",
+     "title": "FCF 예측 접근법",
+     "titleKo": "FCF 예측 접근법"
+    },
+    {
+     "id": "19.f",
+     "title": "배당 · 자사주 · 증자 · 레버리지 변화의 FCF 영향",
+     "titleKo": "배당 · 자사주 · 증자 · 레버리지 변화의 FCF 영향"
+    },
+    {
+     "id": "19.g",
+     "title": "FCFE 모델 vs DDM",
+     "titleKo": "FCFE 모델 vs DDM"
+    },
+    {
+     "id": "19.h",
+     "title": "NI · EBITDA의 현금흐름 대용 적정성",
+     "titleKo": "NI · EBITDA의 현금흐름 대용 적정성"
+    },
+    {
+     "id": "19.i",
+     "title": "민감도 분석",
+     "titleKo": "민감도 분석"
+    },
+    {
+     "id": "19.j",
+     "title": "1 · 2 · 3단계 FCF 모델 선택",
+     "titleKo": "1 · 2 · 3단계 FCF 모델 선택"
+    },
+    {
+     "id": "19.k",
+     "title": "FCF 모델로 기업가치 추정",
+     "titleKo": "FCF 모델로 기업가치 추정"
+    },
+    {
+     "id": "19.l",
+     "title": "terminal value 계산 접근",
+     "titleKo": "terminal value 계산 접근"
+    },
+    {
+     "id": "19.m",
+     "title": "FCF 기반 고평가 · 저평가 판단",
+     "titleKo": "FCF 기반 고평가 · 저평가 판단"
+    }
+   ]
+  },
+  {
+   "id": "R20",
+   "readingNumber": 20,
+   "title": "Market-Based Valuation: Price and Enterprise Value Multiples",
+   "titleKo": "시장기반 평가: 가격 · EV multiples",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R20 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "20.a",
+     "title": "comparables vs forecasted fundamentals 접근",
+     "titleKo": "comparables vs forecasted fundamentals 접근"
+    },
+    {
+     "id": "20.b",
+     "title": "justified price multiple",
+     "titleKo": "justified price multiple"
+    },
+    {
+     "id": "20.c",
+     "title": "대체 multiple과 배당수익률의 논거 · 한계",
+     "titleKo": "대체 multiple과 배당수익률의 논거 · 한계"
+    },
+    {
+     "id": "20.d",
+     "title": "대체 multiple 계산",
+     "titleKo": "대체 multiple 계산"
+    },
+    {
+     "id": "20.e",
+     "title": "underlying earnings와 normalized EPS",
+     "titleKo": "underlying earnings와 normalized EPS"
+    },
+    {
+     "id": "20.f",
+     "title": "earnings yield (E/P)",
+     "titleKo": "earnings yield (E/P)"
+    },
+    {
+     "id": "20.g",
+     "title": "multiple에 영향을 주는 fundamentals",
+     "titleKo": "multiple에 영향을 주는 fundamentals"
+    },
+    {
+     "id": "20.h",
+     "title": "횡단면 회귀 기반 예측 P/E와 한계",
+     "titleKo": "횡단면 회귀 기반 예측 P/E와 한계"
+    },
+    {
+     "id": "20.i",
+     "title": "justified P/E · P/B · P/S 계산",
+     "titleKo": "justified P/E · P/B · P/S 계산"
+    },
+    {
+     "id": "20.j",
+     "title": "PEG ratio",
+     "titleKo": "PEG ratio"
+    },
+    {
+     "id": "20.k",
+     "title": "multistage DCF의 terminal value에 multiple 활용",
+     "titleKo": "multistage DCF의 terminal value에 multiple 활용"
+    },
+    {
+     "id": "20.l",
+     "title": "multiple 비교 기반 고평가 · 저평가 판단",
+     "titleKo": "multiple 비교 기반 고평가 · 저평가 판단"
+    },
+    {
+     "id": "20.m",
+     "title": "method of comparables와 fundamentals의 중요성",
+     "titleKo": "method of comparables와 fundamentals의 중요성"
+    },
+    {
+     "id": "20.n",
+     "title": "현금흐름 정의별 multiple과 한계",
+     "titleKo": "현금흐름 정의별 multiple과 한계"
+    },
+    {
+     "id": "20.o",
+     "title": "EV multiple과 EV/EBITDA",
+     "titleKo": "EV multiple과 EV/EBITDA"
+    },
+    {
+     "id": "20.p",
+     "title": "국가 간 비교의 차이 원천",
+     "titleKo": "국가 간 비교의 차이 원천"
+    },
+    {
+     "id": "20.q",
+     "title": "모멘텀 지표",
+     "titleKo": "모멘텀 지표"
+    },
+    {
+     "id": "20.r",
+     "title": "산술 · 조화 · 가중조화평균 · 중앙값",
+     "titleKo": "산술 · 조화 · 가중조화평균 · 중앙값"
+    }
+   ]
+  },
+  {
+   "id": "R21",
+   "readingNumber": 21,
+   "title": "Residual Income Valuation",
+   "titleKo": "잔여이익 평가 (RI · EVA · MVA)",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R21 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "21.a",
+     "title": "residual income · EVA · MVA 계산",
+     "titleKo": "residual income · EVA · MVA 계산"
+    },
+    {
+     "id": "21.b",
+     "title": "RI 모델의 용도",
+     "titleKo": "RI 모델의 용도"
+    },
+    {
+     "id": "21.c",
+     "title": "RI 모델로 내재가치 계산과 가치 인식 시점 비교",
+     "titleKo": "RI 모델로 내재가치 계산과 가치 인식 시점 비교"
+    },
+    {
+     "id": "21.d",
+     "title": "RI의 근본 결정요인",
+     "titleKo": "RI의 근본 결정요인"
+    },
+    {
+     "id": "21.e",
+     "title": "RI와 justified P/B의 관계",
+     "titleKo": "RI와 justified P/B의 관계"
+    },
+    {
+     "id": "21.f",
+     "title": "단일 · 다단계 RI 모델 계산",
+     "titleKo": "단일 · 다단계 RI 모델 계산"
+    },
+    {
+     "id": "21.g",
+     "title": "P/B로 내재 RI 성장률 역산",
+     "titleKo": "P/B로 내재 RI 성장률 역산"
+    },
+    {
+     "id": "21.h",
+     "title": "continuing residual income",
+     "titleKo": "continuing residual income"
+    },
+    {
+     "id": "21.i",
+     "title": "RI vs DDM vs FCF",
+     "titleKo": "RI vs DDM vs FCF"
+    },
+    {
+     "id": "21.j",
+     "title": "RI 모델의 강점 · 약점과 선택",
+     "titleKo": "RI 모델의 강점 · 약점과 선택"
+    },
+    {
+     "id": "21.k",
+     "title": "RI 적용 시 회계 이슈",
+     "titleKo": "RI 적용 시 회계 이슈"
+    }
+   ]
+  },
+  {
+   "id": "R22",
+   "readingNumber": 22,
+   "title": "Private Company Valuation",
+   "titleKo": "비상장기업 평가",
+   "status": "pending",
+   "pendingNote": "다음 학습 세션에서 이 Reading을 채우면 됩니다. 'R22 채워줘'라고 요청하세요.",
+   "losItems": [
+    {
+     "id": "22.a",
+     "title": "상장 vs 비상장 기업의 평가 관점 차이",
+     "titleKo": "상장 vs 비상장 기업의 평가 관점 차이"
+    },
+    {
+     "id": "22.b",
+     "title": "비상장기업 평가의 용도와 분석 초점",
+     "titleKo": "비상장기업 평가의 용도와 분석 초점"
+    },
+    {
+     "id": "22.c",
+     "title": "현금흐름 추정 이슈와 normalized earnings 조정",
+     "titleKo": "현금흐름 추정 이슈와 normalized earnings 조정"
+    },
+    {
+     "id": "22.d",
+     "title": "할인율 조정 요인",
+     "titleKo": "할인율 조정 요인"
+    },
+    {
+     "id": "22.e",
+     "title": "CAPM · expanded CAPM · build-up 접근",
+     "titleKo": "CAPM · expanded CAPM · build-up 접근"
+    },
+    {
+     "id": "22.f",
+     "title": "지배력 · 유동성 관련 할인과 프리미엄 (DLOC · DLOM)",
+     "titleKo": "지배력 · 유동성 관련 할인과 프리미엄 (DLOC · DLOM)"
+    },
+    {
+     "id": "22.g",
+     "title": "income · market · asset-based 접근과 선택",
+     "titleKo": "income · market · asset-based 접근과 선택"
+    },
+    {
+     "id": "22.h",
+     "title": "income 접근 계산",
+     "titleKo": "income 접근 계산"
+    },
+    {
+     "id": "22.i",
+     "title": "market 접근 계산과 장단점",
+     "titleKo": "market 접근 계산과 장단점"
+    }
+   ]
+  }
+ ]
+}
