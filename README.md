@@ -14,3 +14,4 @@
 data/bookN.json에서 해당 reading의 "status"를 "detailed"로 바꾸고
 losItems에 blocks를 채우면 사이트가 자동으로 본문을 렌더링.
 R17(book3.json)이 기준 템플릿.
+
