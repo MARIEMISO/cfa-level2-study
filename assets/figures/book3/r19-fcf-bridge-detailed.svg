@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs><style>
+.t{font:700 26px Arial,sans-serif;fill:#15231c} .s{font:600 20px Arial,sans-serif;fill:#263b31} .m{font:500 17px Arial,sans-serif;fill:#3b4b43} .box{fill:#f7fbf8;stroke:#7aa88f;stroke-width:2} .hi{fill:#e3f4e9;stroke:#3e8b61;stroke-width:2} .warn{fill:#fff2df;stroke:#c98d3d;stroke-width:2} .line{stroke:#486b58;stroke-width:3;fill:none} .dash{stroke:#9aa9a0;stroke-width:2;stroke-dasharray:7 7;fill:none}
+</style></defs><rect width="100%" height="100%" fill="#fcfdfc"/>
+<text x="50" y="55" class="t">FCF bridge · perspective matching</text>
+<rect x="60" y="110" width="250" height="100" rx="18" class="hi"/><text x="105" y="155" class="s">Net Income</text><text x="95" y="190" class="m">equity-level start</text>
+<rect x="410" y="110" width="310" height="100" rx="18" class="box"/><text x="455" y="155" class="s">+ NCC − FCInv − WCInv</text><text x="485" y="190" class="m">reinvestment bridge</text>
+<rect x="820" y="80" width="300" height="120" rx="18" class="hi"/><text x="905" y="130" class="s">FCFE</text><text x="855" y="170" class="m">+ Net borrowing</text>
+<rect x="820" y="300" width="300" height="120" rx="18" class="hi"/><text x="905" y="350" class="s">FCFF</text><text x="850" y="390" class="m">+ Int(1−t)</text>
+<path d="M310 160 L410 160" class="line"/><path d="M720 160 L820 140" class="line"/><path d="M720 170 C760 230 780 300 820 350" class="line"/>
+<rect x="230" y="500" width="310" height="100" rx="16" class="box"/><text x="270" y="545" class="s">FCFE → rₑ → Equity value</text>
+<rect x="650" y="500" width="350" height="100" rx="16" class="box"/><text x="690" y="545" class="s">FCFF → WACC → Firm value</text></svg>

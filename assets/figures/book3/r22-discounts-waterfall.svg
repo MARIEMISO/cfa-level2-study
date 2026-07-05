@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs><style>
+.t{font:700 26px Arial,sans-serif;fill:#15231c} .s{font:600 20px Arial,sans-serif;fill:#263b31} .m{font:500 17px Arial,sans-serif;fill:#3b4b43} .box{fill:#f7fbf8;stroke:#7aa88f;stroke-width:2} .hi{fill:#e3f4e9;stroke:#3e8b61;stroke-width:2} .warn{fill:#fff2df;stroke:#c98d3d;stroke-width:2} .line{stroke:#486b58;stroke-width:3;fill:none} .dash{stroke:#9aa9a0;stroke-width:2;stroke-dasharray:7 7;fill:none}
+</style></defs><rect width="100%" height="100%" fill="#fcfdfc"/>
+<text x="55" y="55" class="t">Control & marketability · valuation basis waterfall</text>
+<rect x="80" y="120" width="280" height="110" rx="18" class="hi"/><text x="125" y="165" class="s">Control value</text><text x="110" y="200" class="m">100</text>
+<rect x="460" y="120" width="280" height="110" rx="18" class="warn"/><text x="500" y="165" class="s">− DLOC 20%</text><text x="540" y="200" class="m">→ 80</text>
+<rect x="840" y="120" width="280" height="110" rx="18" class="warn"/><text x="885" y="165" class="s">− DLOM 25%</text><text x="925" y="200" class="m">→ 60</text>
+<path d="M360 175 L460 175 M740 175 L840 175" class="line"/>
+<rect x="230" y="380" width="740" height="150" rx="22" class="box"/><text x="280" y="430" class="s">Control premium 25% ≠ DLOC 25%</text><text x="280" y="475" class="m">DLOC = 1 − 1/(1+CP) = 20%</text><text x="280" y="510" class="m">Discounts are usually multiplicative, not simply additive</text></svg>
