@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
-<defs><style>
-.t{font:700 26px Arial,sans-serif;fill:#15231c} .s{font:600 20px Arial,sans-serif;fill:#263b31} .m{font:500 17px Arial,sans-serif;fill:#3b4b43} .box{fill:#f7fbf8;stroke:#7aa88f;stroke-width:2} .hi{fill:#e3f4e9;stroke:#3e8b61;stroke-width:2} .warn{fill:#fff2df;stroke:#c98d3d;stroke-width:2} .line{stroke:#486b58;stroke-width:3;fill:none} .dash{stroke:#9aa9a0;stroke-width:2;stroke-dasharray:7 7;fill:none}
-</style></defs><rect width="100%" height="100%" fill="#fcfdfc"/>
-<text x="55" y="55" class="t">Justified multiples · denominator economics</text>
-<rect x="70" y="120" width="300" height="120" rx="18" class="hi"/><text x="115" y="165" class="s">P/E</text><text x="110" y="205" class="m">payout ↑ · growth ↑ · r ↓</text>
-<rect x="450" y="120" width="300" height="120" rx="18" class="hi"/><text x="495" y="165" class="s">P/B</text><text x="490" y="205" class="m">ROE spread ↑ · r ↓</text>
-<rect x="830" y="120" width="300" height="120" rx="18" class="hi"/><text x="875" y="165" class="s">P/S</text><text x="870" y="205" class="m">margin ↑ · growth ↑ · r ↓</text>
-<rect x="190" y="370" width="820" height="140" rx="20" class="box"/><text x="235" y="420" class="s">CFA logic</text><text x="235" y="462" class="m">낮은 multiple = 싸다? 먼저 growth, risk, profitability 차이를 설명해.</text><text x="235" y="498" class="m">Relative undervaluation ≠ intrinsic undervaluation</text></svg>
