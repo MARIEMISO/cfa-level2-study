@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs><style>
+.t{font:700 26px Arial,sans-serif;fill:#15231c} .s{font:600 20px Arial,sans-serif;fill:#263b31} .m{font:500 17px Arial,sans-serif;fill:#3b4b43} .box{fill:#f7fbf8;stroke:#7aa88f;stroke-width:2} .hi{fill:#e3f4e9;stroke:#3e8b61;stroke-width:2} .warn{fill:#fff2df;stroke:#c98d3d;stroke-width:2} .line{stroke:#486b58;stroke-width:3;fill:none} .dash{stroke:#9aa9a0;stroke-width:2;stroke-dasharray:7 7;fill:none}
+</style></defs><rect width="100%" height="100%" fill="#fcfdfc"/>
+<text x="50" y="55" class="t">DDM model selection · 성장 경로부터 본다</text>
+<rect x="60" y="120" width="240" height="110" rx="18" class="box"/><text x="95" y="165" class="s">Stable now?</text><text x="95" y="198" class="m">→ Gordon</text>
+<rect x="360" y="120" width="250" height="110" rx="18" class="box"/><text x="395" y="165" class="s">Abrupt switch?</text><text x="395" y="198" class="m">→ Two-stage</text>
+<rect x="670" y="120" width="250" height="110" rx="18" class="box"/><text x="705" y="165" class="s">Linear fade?</text><text x="705" y="198" class="m">→ H-model</text>
+<rect x="955" y="120" width="210" height="110" rx="18" class="box"/><text x="985" y="165" class="s">Complex?</text><text x="985" y="198" class="m">→ Spreadsheet</text>
+<line x1="110" y1="500" x2="1100" y2="500" class="line"/><path d="M150 300 L330 300 L330 500" class="line"/><path d="M390 300 L520 300 L520 500" class="line"/><path d="M580 300 C720 320 790 390 850 500" class="line"/><path d="M930 300 C990 340 1040 390 1080 500" class="line"/>
+<text x="140" y="285" class="m">High growth</text><text x="450" y="285" class="m">Transition</text><text x="880" y="285" class="m">Maturity</text></svg>

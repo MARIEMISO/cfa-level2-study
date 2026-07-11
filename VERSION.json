@@ -1,0 +1,13 @@
+{
+  "site": "CFA Level II Study Site",
+  "release": "github-ops-kit-final",
+  "source_zip": "cfa_level2_launch_ready_v2_root_upload.zip",
+  "created_at": "2026-07-11T04:19:39",
+  "curriculum": {
+    "books": 5,
+    "readings": 42,
+    "los": 370,
+    "note_images_audited": 509,
+    "unresolved_note_images": 0
+  }
+}

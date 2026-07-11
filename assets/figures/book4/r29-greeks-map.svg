@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect width="1100" height="650" rx="28" fill="#fbfaf7"/>
+<text x="550" y="55" text-anchor="middle" font-size="34" font-family="Arial" font-weight="700" fill="#222">Option Greeks Risk Map</text>
+<circle cx="550" cy="320" r="105" fill="#f0ede6" stroke="#555" stroke-width="3"/><text x="550" y="312" text-anchor="middle" font-size="28" font-family="Arial" font-weight="700">Option</text><text x="550" y="350" text-anchor="middle" font-size="22" font-family="Arial">Value / P&amp;L</text>
+<rect x="80" y="110" width="260" height="110" rx="18" fill="#e8f0ff" stroke="#5677b8" stroke-width="3"/><text x="210" y="150" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Delta</text><text x="210" y="188" text-anchor="middle" font-size="20" font-family="Arial">Underlying move</text>
+<rect x="760" y="110" width="260" height="110" rx="18" fill="#fff0e5" stroke="#c8793b" stroke-width="3"/><text x="890" y="150" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Gamma</text><text x="890" y="188" text-anchor="middle" font-size="20" font-family="Arial">Delta curvature</text>
+<rect x="70" y="430" width="260" height="110" rx="18" fill="#e9f7ec" stroke="#4a9660" stroke-width="3"/><text x="200" y="470" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Vega</text><text x="200" y="508" text-anchor="middle" font-size="20" font-family="Arial">Volatility</text>
+<rect x="770" y="430" width="260" height="110" rx="18" fill="#f5eafa" stroke="#8a5aa5" stroke-width="3"/><text x="900" y="470" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Theta / Rho</text><text x="900" y="508" text-anchor="middle" font-size="20" font-family="Arial">Time / rates</text>
+<line x1="340" y1="195" x2="465" y2="270" stroke="#777" stroke-width="4"/><line x1="760" y1="195" x2="635" y2="270" stroke="#777" stroke-width="4"/><line x1="330" y1="455" x2="465" y2="370" stroke="#777" stroke-width="4"/><line x1="770" y1="455" x2="635" y2="370" stroke="#777" stroke-width="4"/>
+<text x="550" y="605" text-anchor="middle" font-size="21" font-family="Arial" fill="#444">Delta-neutral does not mean risk-free: gamma and volatility can still dominate.</text>
+</svg>

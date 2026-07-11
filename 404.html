@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CFA Level II 개인 온라인 교재 — LOS별 설명, 공식, 그래프, 퀴즈, 오답노트" />
+  <title>CFA Level II · Visual Textbook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="교재 탐색">
+      <div class="brand">
+        <span class="badge">CFA LEVEL II · 2026</span>
+        <h1>Visual Textbook</h1>
+        <p>마리 노트의 흐름 + 2026 LOS 구조 + 설명형 도식</p>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-top"><span>전체 LOS 진행률</span><strong id="progressText">0%</strong></div>
+        <div class="progress-bar"><div id="progressFill"></div></div>
+        <small id="progressDetail">0 / 0 LOS 완료</small>
+      </div>
+
+      <nav id="bookNav" class="book-nav"></nav>
+      <p class="side-footer">BOOK JSON은 그대로 교체 가능하고, 시각자료는 <code>assets/figures</code>에서 독립 관리돼.</p>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <button id="menuBtn" class="menu-btn" aria-label="메뉴 열기">☰</button>
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="search" placeholder="개념 · 공식 · LOS · 키워드 검색" autocomplete="off" />
+          <button id="clearSearch" title="검색 초기화" aria-label="검색 초기화">×</button>
+        </div>
+        <div class="top-status" id="topStatus">Loading…</div>
+      </header>
+
+      <section id="readingListPanel" class="reading-list-panel" aria-label="Reading 및 LOS 목록"></section>
+
+      <section id="mainPanel" class="main-panel empty">
+        <div class="empty-mark">∑</div>
+        <h2>교재를 불러오는 중이야.</h2>
+        <p>BOOK → Reading → LOS 순서로 공부할 수 있어.</p>
+      </section>
+    </main>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox-close" aria-label="이미지 닫기">×</button>
+    <figure>
+      <img id="lightboxImg" alt="확대된 학습 도식" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

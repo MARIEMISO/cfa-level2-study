@@ -1,0 +1,21 @@
+{
+  "release": "launch-ready-v2",
+  "counts": {
+    "readings": 42,
+    "los": 370,
+    "quiz_items": 761,
+    "formula_or_concept_cards": 695,
+    "visual_refs": 51,
+    "missing_visual_assets": 0
+  },
+  "required_files": {
+    "index.html": true,
+    "404.html": true,
+    ".nojekyll": true,
+    "style.css": true,
+    "script.js": true,
+    "data": true,
+    "assets": true
+  },
+  "ready": true
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs><style>
+.t{font:700 26px Arial,sans-serif;fill:#15231c} .s{font:600 20px Arial,sans-serif;fill:#263b31} .m{font:500 17px Arial,sans-serif;fill:#3b4b43} .box{fill:#f7fbf8;stroke:#7aa88f;stroke-width:2} .hi{fill:#e3f4e9;stroke:#3e8b61;stroke-width:2} .warn{fill:#fff2df;stroke:#c98d3d;stroke-width:2} .line{stroke:#486b58;stroke-width:3;fill:none} .dash{stroke:#9aa9a0;stroke-width:2;stroke-dasharray:7 7;fill:none}
+</style></defs><rect width="100%" height="100%" fill="#fcfdfc"/>
+<text x="55" y="55" class="t">Central tendency of multiples · outlier에 누가 강한가?</text>
+<rect x="80" y="120" width="290" height="120" rx="18" class="warn"/><text x="120" y="165" class="s">Arithmetic mean</text><text x="110" y="205" class="m">큰 outlier 영향 큼</text>
+<rect x="455" y="120" width="290" height="120" rx="18" class="hi"/><text x="505" y="165" class="s">Harmonic mean</text><text x="495" y="205" class="m">positive ratios의 큰 값 영향 완화</text>
+<rect x="830" y="120" width="290" height="120" rx="18" class="hi"/><text x="925" y="165" class="s">Median</text><text x="875" y="205" class="m">extreme value에 robust</text>
+<line x1="100" y1="500" x2="1100" y2="500" class="line"/><circle cx="220" cy="500" r="14" fill="#3e8b61"/><circle cx="330" cy="500" r="14" fill="#3e8b61"/><circle cx="430" cy="500" r="14" fill="#3e8b61"/><circle cx="540" cy="500" r="14" fill="#3e8b61"/><circle cx="1000" cy="500" r="18" fill="#c98d3d"/><text x="920" y="550" class="m">huge P/E outlier</text></svg>

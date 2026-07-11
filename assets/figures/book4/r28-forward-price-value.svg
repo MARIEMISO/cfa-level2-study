@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+<rect width="1100" height="600" rx="28" fill="#fbfaf7"/>
+<text x="550" y="55" text-anchor="middle" font-size="34" font-family="Arial" font-weight="700" fill="#222">Forward Price vs Forward Value</text>
+<line x1="110" y1="300" x2="990" y2="300" stroke="#555" stroke-width="4"/>
+<circle cx="180" cy="300" r="11" fill="#4d6fa9"/><circle cx="550" cy="300" r="11" fill="#c97b3a"/><circle cx="920" cy="300" r="11" fill="#4a9460"/>
+<text x="180" y="345" text-anchor="middle" font-size="23" font-family="Arial">t = 0</text><text x="550" y="345" text-anchor="middle" font-size="23" font-family="Arial">valuation date t</text><text x="920" y="345" text-anchor="middle" font-size="23" font-family="Arial">T</text>
+<rect x="80" y="120" width="300" height="120" rx="18" fill="#eaf0fb" stroke="#4d6fa9" stroke-width="3"/>
+<text x="230" y="160" text-anchor="middle" font-size="24" font-family="Arial" font-weight="700">Price the contract</text><text x="230" y="198" text-anchor="middle" font-size="20" font-family="Arial">Choose K so V₀ = 0</text>
+<rect x="400" y="90" width="300" height="150" rx="18" fill="#fff1e6" stroke="#c97b3a" stroke-width="3"/>
+<text x="550" y="135" text-anchor="middle" font-size="24" font-family="Arial" font-weight="700">Value the old contract</text><text x="550" y="175" text-anchor="middle" font-size="20" font-family="Arial">Current adjusted spot</text><text x="550" y="207" text-anchor="middle" font-size="20" font-family="Arial">− PV(original K)</text>
+<rect x="750" y="120" width="280" height="120" rx="18" fill="#eaf7ed" stroke="#4a9460" stroke-width="3"/>
+<text x="890" y="160" text-anchor="middle" font-size="24" font-family="Arial" font-weight="700">Settle</text><text x="890" y="198" text-anchor="middle" font-size="20" font-family="Arial">Long payoff = S_T − K</text>
+<text x="550" y="465" text-anchor="middle" font-size="23" font-family="Arial" fill="#333">Key trap: contract price K stays fixed; contract value changes after inception.</text>
+</svg>

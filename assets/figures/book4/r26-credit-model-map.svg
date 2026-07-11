@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="1100" height="620" rx="28" fill="#fbfaf7"/>
+<text x="550" y="58" text-anchor="middle" font-size="34" font-family="Arial" font-weight="700" fill="#222">Credit Risk Model Map</text>
+<rect x="70" y="110" width="280" height="150" rx="20" fill="#e8f0ff" stroke="#5677b8" stroke-width="3"/>
+<text x="210" y="150" text-anchor="middle" font-size="25" font-family="Arial" font-weight="700">Expected Loss</text>
+<text x="210" y="190" text-anchor="middle" font-size="22" font-family="Arial">EE × PD × LGD</text>
+<text x="210" y="225" text-anchor="middle" font-size="18" font-family="Arial">Discount → CVA</text>
+<rect x="410" y="110" width="280" height="150" rx="20" fill="#fff0e5" stroke="#c8793b" stroke-width="3"/>
+<text x="550" y="150" text-anchor="middle" font-size="25" font-family="Arial" font-weight="700">Structural</text>
+<text x="550" y="190" text-anchor="middle" font-size="21" font-family="Arial">Equity = Call on Assets</text>
+<text x="550" y="225" text-anchor="middle" font-size="18" font-family="Arial">Default when Aₜ &lt; K</text>
+<rect x="750" y="110" width="280" height="150" rx="20" fill="#e9f7ec" stroke="#4a9660" stroke-width="3"/>
+<text x="890" y="150" text-anchor="middle" font-size="25" font-family="Arial" font-weight="700">Reduced Form</text>
+<text x="890" y="190" text-anchor="middle" font-size="21" font-family="Arial">Hazard / Intensity</text>
+<text x="890" y="225" text-anchor="middle" font-size="18" font-family="Arial">Exogenous default event</text>
+<line x1="210" y1="260" x2="210" y2="340" stroke="#555" stroke-width="4"/>
+<line x1="550" y1="260" x2="550" y2="340" stroke="#555" stroke-width="4"/>
+<line x1="890" y1="260" x2="890" y2="340" stroke="#555" stroke-width="4"/>
+<rect x="125" y="340" width="850" height="180" rx="24" fill="#f3f1eb" stroke="#555" stroke-width="3"/>
+<text x="550" y="388" text-anchor="middle" font-size="28" font-family="Arial" font-weight="700">Market Pricing Outputs</text>
+<text x="260" y="445" text-anchor="middle" font-size="21" font-family="Arial">Risky Bond Value</text>
+<text x="550" y="445" text-anchor="middle" font-size="21" font-family="Arial">Credit Spread Curve</text>
+<text x="840" y="445" text-anchor="middle" font-size="21" font-family="Arial">Migration / Relative Value</text>
+<text x="550" y="490" text-anchor="middle" font-size="18" font-family="Arial" fill="#555">Separate physical PD from risk-neutral pricing probability.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<rect width="1100" height="640" rx="28" fill="#fbfaf7"/>
+<text x="550" y="55" text-anchor="middle" font-size="34" font-family="Arial" font-weight="700" fill="#222">Real Estate Valuation Map</text>
+<rect x="70" y="115" width="280" height="150" rx="20" fill="#e8f0ff" stroke="#5677b8" stroke-width="3"/>
+<text x="210" y="155" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Cost Approach</text><text x="210" y="195" text-anchor="middle" font-size="19" font-family="Arial">Land + replacement cost</text><text x="210" y="227" text-anchor="middle" font-size="19" font-family="Arial">− depreciation</text>
+<rect x="410" y="115" width="280" height="150" rx="20" fill="#fff0e5" stroke="#c8793b" stroke-width="3"/>
+<text x="550" y="155" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Sales Comparison</text><text x="550" y="195" text-anchor="middle" font-size="19" font-family="Arial">Comparable transactions</text><text x="550" y="227" text-anchor="middle" font-size="19" font-family="Arial">+ adjustments</text>
+<rect x="750" y="115" width="280" height="150" rx="20" fill="#e9f7ec" stroke="#4a9660" stroke-width="3"/>
+<text x="890" y="155" text-anchor="middle" font-size="26" font-family="Arial" font-weight="700">Income Approach</text><text x="890" y="195" text-anchor="middle" font-size="19" font-family="Arial">NOI / cap rate</text><text x="890" y="227" text-anchor="middle" font-size="19" font-family="Arial">or DCF + terminal value</text>
+<rect x="160" y="340" width="780" height="185" rx="22" fill="#f1efe9" stroke="#555" stroke-width="3"/>
+<text x="550" y="385" text-anchor="middle" font-size="27" font-family="Arial" font-weight="700">Due Diligence feeds every valuation input</text>
+<text x="300" y="435" text-anchor="middle" font-size="20" font-family="Arial">Physical / environmental</text><text x="550" y="435" text-anchor="middle" font-size="20" font-family="Arial">Lease / tenant / NOI</text><text x="800" y="435" text-anchor="middle" font-size="20" font-family="Arial">Title / zoning / market</text>
+<text x="550" y="485" text-anchor="middle" font-size="20" font-family="Arial" fill="#444">Trap: NOI excludes financing costs and accounting depreciation.</text>
+</svg>
